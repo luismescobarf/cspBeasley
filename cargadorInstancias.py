@@ -14,10 +14,11 @@ def beasley(ruta):
     instancia['transiciones'] = []#Listado de diccionarios de transiciones entre bloques o servicios
     instancia['matrizCostos'] = []#Matriz con los costos de transición
     instancia['mayorCostoReactivo'] = 0#Costo reactivo para generar el costo de salida de cada nuevo operador en los turnos
-    instancia['matrizTiemposTransicion'] = []#Matriz para facilitar la consulta de factibilidad
+    instancia['matrizTiemposTransicion'] = []#Matriz para facilitar la consulta de factibilidad    
     
     #Valor grande para costos prohibitivos
-    M = 100000000      
+    M = 100000000
+    instancia['M'] = M#Cargar infactibilidad en la instancia      
     
     #Intentar abrir el archivo 
     try:
@@ -103,6 +104,7 @@ def beasley(ruta):
     
 #Llamados de diagnóstico
 #-----------------------
+
 """
 instancia = beasley('./instances/csp50.txt')	
 
@@ -116,7 +118,8 @@ print('Transiciones:')
 for transicion in instancia['transiciones']:
     print(transicion)
 del transicion
-""" 
+"""
+ 
 
 #Matrices cargador versión C++
 """
