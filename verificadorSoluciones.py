@@ -14,8 +14,9 @@ from cargadorInstancias import *
 
 #Entradas para una sola instancia
 instancia = beasley('./instances/csp50.txt')	
-solucion = solucionVRP_Solver('./solutions/sol_csp50.txt')
-
+solucion = solucionVRP_Solver('./solutions/sol_csp50.txt')#Solución sospecha infactible, 24 itinerarios
+solucion = solucionVRP_Solver('./solutions/sol_csp50_b.txt')#Solución VRPSolver tiempos de servicio corregidos, 27 itinerarios
+#solucion = solucionVRP_Solver('./solutions/sol_csp50_modeloPropuesto.txt')#Solución mesquita92+borcinova17, 27 itinerarios
 
 #Recorrer los itinerarios y revisar:
 #-Traslapes de ventanas de tiempo
@@ -39,7 +40,10 @@ indiceItinerario = 1
 for itinerario in solucion['itinerarios']:
     
     #Acumulador de la duración del itinerario
-    duracionItinerario = 0   
+    duracionItinerario = 0  
+    
+    #Acumulador de costo de cada itinerario (diagnóstico)
+    costoItinerario = 0
     
     #Validar si se trata de un itinerario con bloque único
     if len(itinerario) == 1:
@@ -62,7 +66,10 @@ for itinerario in solucion['itinerarios']:
             listadoBloques[ itinerario[i] ] += 1            
             
             #Incorporar el costo de cada transición
-            reporte['costoInterno'] += instancia['matrizTiemposTransicion'][ itinerario[i] , itinerario[i+1] ]
+            reporte['costoInterno'] += instancia['matrizCostos'][ itinerario[i] , itinerario[i+1] ]
+            
+            #Diagnóstico de costos parciales
+            costoItinerario += instancia['matrizCostos'][ itinerario[i] , itinerario[i+1] ]
             
             #Revisar tiempo de transición (factibilidad)
             if not(instancia['matrizTiemposTransicion'][ itinerario[i] , itinerario[i+1] ] == instancia['M']):
@@ -91,25 +98,27 @@ for itinerario in solucion['itinerarios']:
             reporte['itinerariosExtensos']['itinerarios'].append(itinerario)
             reporte['itinerariosExtensos']['excesos'].append(duracionItinerario - instancia['minutosJornada'])
           
-        #Costo de salida para cada itinerario
-        reporte['costoCompleto'] += instancia['matrizCostos'][ 0 , itinerario[0] ]
-        
-        #Incrementar el índice de itinerarios para el reporte de errores
-        indiceItinerario += 1
+    #Acumular costo de salida para cada itinerario
+    reporte['costoCompleto'] += instancia['matrizCostos'][ 0 , itinerario[0] ]
+    #reporte['costoCompleto'] += 750 #Validación de la solución generada entre julio y septiembre 2020
     
+    #Acumular el costo de cada itinerario para el costo completo
+    reporte['costoCompleto'] += costoItinerario
+    
+    #Diagnóstico costo de cada itinerario    
+    print(indiceItinerario,' - ',itinerario, ': ', costoItinerario)    
+    
+    #Incrementar el índice de itinerarios para el reporte de errores
+    indiceItinerario += 1
+    
+#Incorporar al reporte los bloques ausentes y los repetidos
+reporte['repetidos'] = []
+reporte['ausentes'] = []
+for bloque,apariciones in listadoBloques.items():
+    if apariciones > 1:
+        reporte['repetidos'] = bloque
+    elif apariciones == 0:
+        reporte['ausentes'] = bloque
     
 #Mostrar reporte detallado
 pp.pprint(reporte)
-    
-        
-    
-
-
-
-
-
- 
-
-							
-
-
