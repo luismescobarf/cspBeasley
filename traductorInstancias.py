@@ -29,17 +29,58 @@ try:
         #Agregar el nombre del caso de prueba en la primera línea
         nuevaInstanciaSolomon.write(nombreInstancia)
         
-        #Agregar todas las líneas del encabezado
+        #Agregar las líneas del encabezado
         for linea in encabezado:
-            nuevaInstanciaSolomon.write(linea)   
+            nuevaInstanciaSolomon.write(linea)            
+            
+        #Insertar información de los nodos (bloques de servicio)
+        cuatroEspacios = '    '
+        seisEspacios = '      '
+        nueveEspacios = '         '
+        coordenadaVirtualBloque_XY = 1 
+        
+        #Insertar la información del depósito virtual
+        
+        
+        
+        #Realizar el proceso para los nodos (bloques de trabajo o servicios)
+        for i in range(1,instancia['numBloques']+1):
+            
+            #Contenedor de la línea que se va a insertar
+            linea = str()
+            
+            #Número de cliente
+            linea += cuatroEspacios + str(i)
+            
+            #Coordenada en x
+            linea += seisEspacios + str(coordenadaVirtualBloque_XY) 
+            
+            #Coordenada en y
+            linea += seisEspacios + str(coordenadaVirtualBloque_XY) 
+            
+            #Demanda (valor unitario, virtual)
+            linea += seisEspacios + str(1) 
+            
+            #Ready Time
+            
+            
+            #Due Date
+            
+            #Service Time
+            
+            #Mover coordenadas
+            coordenadaVirtualBloque_XY += 1
+            
+            
+            
+                  
+        #Generar el segundo archivo de la instancia, con los costos de los arcos (transiciones factibles)
         
 except:
     print('Problemas abriendo el encabezado o el archivo de salida con la instancia en formato Solomon')
 
 
-#Insertar información de los nodos (bloques de servicio)
 
 
 
-#Generar el archivo con los costos de los arcos (transiciones factibles)
 
