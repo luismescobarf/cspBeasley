@@ -13,8 +13,9 @@ from cargadorInstancias import *
 #Entrada por lotes (pendiente)
 
 #Entradas para una sola instancia
-instancia = beasley('./instances/csp50.txt')	
-solucion = solucionVRP_Solver('./solutions/vrpSolver_csp50.txt')#Solución sospecha infactible, 24 itinerarios
+instancia = beasley('./instances/csp500.txt')	
+solucion = solucionVRP_Solver('./solutions/vrpSolver_csp500.txt')#Solución sospecha infactible, 24 itinerarios
+#solucion = solucionVRP_Solver('./solutions/vrpSolver_csp50.txt')#Solución sospecha infactible, 24 itinerarios
 #solucion = solucionVRP_Solver('./solutions/sol_csp50.txt')#Solución sospecha infactible, 24 itinerarios
 #solucion = solucionVRP_Solver('./solutions/sol_csp50_b.txt')#Solución VRPSolver tiempos de servicio corregidos, 27 itinerarios
 #solucion = solucionVRP_Solver('./solutions/sol_csp50_modeloPropuesto.txt')#Solución mesquita92+borcinova17, 27 itinerarios

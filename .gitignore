@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Ignorar el solver por temas de licenciamiento
+CSP_VRPSolver/VRPSolver
