@@ -1,0 +1,164 @@
+Application parameters:
+  batch  =>  nothing
+  tikz  =>  nothing
+  instance  =>  "/IN/csp200_Solomon.txt"
+  out  =>  "/OUT/csp200_Solomon.sol"
+  nosolve  =>  false
+  ub  =>  1.0e7
+  sol  =>  nothing
+  cfg  =>  "/VRPTW/src/../config/VRPTW_set_1.cfg"
+  enable_cap_res  =>  false
+[41m solve [00m
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver beta v0.3, 17/11/2019. Web: vrpsolver.math.u-bordeaux.fr
+Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2019)
+Paper: dx.doi.org/10.1007/978-3-030-17953-3_27
+USE THIS CODE ONLY FOR ACADEMIC PURPOSES AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BaPCod v045b, 17/11/2019, © Inria Bordeaux, France (license expires 1/12/2021)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver parameters:
+GlobalTimeLimit = 21474836
+MaxNbOfBBtreeNodeTreated = 100000
+treeSearchStrategy = 1
+RCSPstopCutGenTimeThresholdInPricing = 5
+RCSPhardTimeThresholdInPricing = 10
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 1
+RCSPapplyReducedCostFixing = 1
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+RCSPheurLabelingStrategy = 0
+StabilizationMinPhaseOfStage = 0
+RCSPmaxNumOfLabelsInEnumeration = 1000000
+RCSPmaxNumOfEnumeratedSolutions = 10000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 16
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMaxNumRows = 7
+RCSPrankOneCutsMemoryType = 1
+CutTailingOffThreshold = 0.015
+CutTailingOffCounterThreshold = 3
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOneCandidatesNumber = 50
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.1
+StrongBranchingPhaseTwoCandidatesNumber = 3
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.1
+MaxTimeForRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+New model incumbent solution 1e+07, TIME = 0h0m0s3t = 3
+Model is built TIME = 0h0m0s92t = 92
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m0s92t = 92
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 402 art. vars. (402 active)
+************************************************************************************************
+<DWph=2> <it= 10> <et=0.97> <Mt= 0.00> <Spt= 0.00> <nCl=300> <DB=-20509787491.4067> <Mlp=398510925.2000> <PB=10000000> 
+<DWph=2> <it= 20> <et=1.03> <Mt= 0.02> <Spt= 0.00> <nCl=227> <DB=-417390.2231> <Mlp=140413.2500> <PB=10000000> 
+<DWph=2> <it= 30> <et=1.08> <Mt= 0.01> <Spt= 0.00> <nCl= 99> <DB=10604.5000> <Mlp=138604.5000> <PB=138833> 
+<DWph=2> <it= 33> <et=1.10> <Mt= 0.01> <Spt= 0.00> <nCl=  2> <DB=138490.5000> <Mlp=138490.5000> <PB=138833> 
+<DWph=1> <it= 35> <et=1.12> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=138490.5000> <Mlp=138490.5000> <PB=138833> 
+<DWph=0> <it= 36> <et=1.13> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=138490.5000> <Mlp=138490.5000> <PB=138833> 
+Reduced cost fixing for graph G_1... took 0 sec., 4671 buck. arcs remain (35.1% from prev., 6.49% from max.)
+Run enumeration... took 0.06 sec. and succeeded! Pricing will be done by inspection.
+ColGenEvalAlg final dual bound: 138490 (rounded: 138491)
+----- Terminating the node by MIP -----
+MIP found solution with value 138535
+New model incumbent solution 138535, TIME = 0h0m1s32t = 132
+************************************************************************************************
+Search is finished, global bounds : [ 138535 , 138535 ], TIME = 0h0m1s32t = 132
+************************************************************************************************
+[32mBaPCod : solution defined.[00m
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: csp200_Solomon & 1 & 1.0e7 & 138535.00 & 1.32 & 1 & 138535.00 & 138535 & 1.32 \\
+########################################################
+Route #1: 1 40 
+Route #2: 2 27 
+Route #3: 3 24 41 
+Route #4: 4 17 30 
+Route #5: 5 28 38 48 
+Route #6: 6 34 
+Route #7: 7 43 
+Route #8: 8 25 56 
+Route #9: 9 39 58 
+Route #10: 10 20 46 60 
+Route #11: 11 53 
+Route #12: 12 33 61 
+Route #13: 13 51 
+Route #14: 14 50 
+Route #15: 15 45 64 
+Route #16: 16 31 
+Route #17: 18 36 
+Route #18: 19 62 72 
+Route #19: 21 47 
+Route #20: 22 49 73 
+Route #21: 23 44 66 
+Route #22: 26 52 
+Route #23: 29 67 79 
+Route #24: 32 54 
+Route #25: 35 59 
+Route #26: 37 42 78 
+Route #27: 55 96 
+Route #28: 57 91 
+Route #29: 63 89 
+Route #30: 65 92 
+Route #31: 68 111 
+Route #32: 69 101 125 
+Route #33: 70 103 
+Route #34: 71 109 
+Route #35: 74 97 116 
+Route #36: 75 118 
+Route #37: 76 100 140 
+Route #38: 77 99 
+Route #39: 80 104 122 
+Route #40: 81 119 
+Route #41: 82 120 
+Route #42: 83 106 132 
+Route #43: 84 108 128 
+Route #44: 85 124 
+Route #45: 86 107 
+Route #46: 87 126 
+Route #47: 88 110 150 
+Route #48: 90 117 129 144 
+Route #49: 93 115 157 
+Route #50: 94 130 
+Route #51: 95 114 123 151 
+Route #52: 98 127 136 
+Route #53: 102 131 141 
+Route #54: 105 143 
+Route #55: 112 152 
+Route #56: 113 147 
+Route #57: 121 165 
+Route #58: 133 146 172 180 
+Route #59: 134 156 192 
+Route #60: 135 174 
+Route #61: 137 170 
+Route #62: 138 171 
+Route #63: 139 148 193 
+Route #64: 142 168 178 196 
+Route #65: 145 166 182 
+Route #66: 149 179 198 
+Route #67: 153 181 
+Route #68: 154 173 
+Route #69: 155 176 
+Route #70: 158 177 
+Route #71: 159 194 
+Route #72: 160 184 
+Route #73: 161 175 187 
+Route #74: 162 186 
+Route #75: 163 200 
+Route #76: 164 195 
+Route #77: 167 190 
+Route #78: 169 185 
+Route #79: 183 
+Route #80: 188 
+Route #81: 189 
+Route #82: 191 
+Route #83: 197 
+Route #84: 199 
+Cost 138535.0
+########################################################

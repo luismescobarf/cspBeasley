@@ -1,0 +1,842 @@
+Application parameters:
+  batch  =>  nothing
+  tikz  =>  nothing
+  instance  =>  "/IN/csp400_Solomon.txt"
+  out  =>  "/OUT/csp400_Solomon.sol"
+  nosolve  =>  false
+  ub  =>  1.0e7
+  sol  =>  nothing
+  cfg  =>  "/VRPTW/src/../config/VRPTW_set_1.cfg"
+  enable_cap_res  =>  false
+[41m solve [00m
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver beta v0.3, 17/11/2019. Web: vrpsolver.math.u-bordeaux.fr
+Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2019)
+Paper: dx.doi.org/10.1007/978-3-030-17953-3_27
+USE THIS CODE ONLY FOR ACADEMIC PURPOSES AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BaPCod v045b, 17/11/2019, © Inria Bordeaux, France (license expires 1/12/2021)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver parameters:
+GlobalTimeLimit = 21474836
+MaxNbOfBBtreeNodeTreated = 100000
+treeSearchStrategy = 1
+RCSPstopCutGenTimeThresholdInPricing = 5
+RCSPhardTimeThresholdInPricing = 10
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 1
+RCSPapplyReducedCostFixing = 1
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+RCSPheurLabelingStrategy = 0
+StabilizationMinPhaseOfStage = 0
+RCSPmaxNumOfLabelsInEnumeration = 1000000
+RCSPmaxNumOfEnumeratedSolutions = 10000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 16
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMaxNumRows = 7
+RCSPrankOneCutsMemoryType = 1
+CutTailingOffThreshold = 0.015
+CutTailingOffCounterThreshold = 3
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOneCandidatesNumber = 50
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.1
+StrongBranchingPhaseTwoCandidatesNumber = 3
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.1
+MaxTimeForRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+New model incumbent solution 1e+07, TIME = 0h0m0s3t = 3
+Model is built TIME = 0h0m1s20t = 120
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m1s20t = 120
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 802 art. vars. (802 active)
+************************************************************************************************
+<DWph=2> <it= 10> <et=1.34> <Mt= 0.01> <Spt= 0.10> <nCl=300> <DB=-31100176715.0322> <Mlp=2055125145.5000> <PB=10000000> 
+<DWph=2> <it= 20> <et=1.49> <Mt= 0.04> <Spt= 0.10> <nCl=300> <DB=-22940686387.1263> <Mlp=531946343.0287> <PB=10000000> 
+<DWph=2> <it= 30> <et=1.71> <Mt= 0.10> <Spt= 0.10> <nCl=235> <DB=-11182319198.5917> <Mlp=267287.7886> <PB=10000000> 
+<DWph=2> <it= 40> <et=1.96> <Mt= 0.10> <Spt= 0.14> <nCl=166> <DB= -772.9542> <Mlp=258257.0889> <PB=10000000> 
+<DWph=2> <it= 50> <et=2.16> <Mt= 0.08> <Spt= 0.10> <nCl=170> <DB=194587.6939> <Mlp=256027.8067> <PB=10000000> 
+<DWph=2> <it= 60> <et=2.32> <Mt= 0.03> <Spt= 0.11> <nCl=118> <DB=248421.1336> <Mlp=255564.6061> <PB=10000000> 
+<DWph=2> <it= 64> <et=2.41> <Mt= 0.01> <Spt= 0.07> <nCl=  4> <DB=255564.5515> <Mlp=255564.5515> <PB=10000000> 
+<DWph=1> <it= 69> <et=2.48> <Mt= 0.00> <Spt= 0.06> <nCl= 23> <DB=255554.8788> <Mlp=255554.8788> <PB=10000000> 
+<DWph=0> <it= 70> <et=2.52> <Mt= 0.01> <Spt= 0.02> <nCl=  0> <DB=255554.8788> <Mlp=255554.8788> <PB=10000000> 
+Reduced cost fixing for graph G_1... took 0.05 sec., 35780 buck. arcs remain (56% from prev., 10.7% from max.)
+Run enumeration... took 0.15 sec. and succeeded! Pricing will be done by inspection.
+<DWph=2> <it= 71> <et=2.87> <Mt= 0.08> <Spt= 0.00> <nCl=  0> <DB=255554.8788> <Mlp=255554.8788> <PB=10000000> 
+<DWph=1> <it= 72> <et=2.88> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255554.8788> <Mlp=255554.8788> <PB=10000000> 
+<DWph=0> <it= 73> <et=2.88> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255554.8788> <Mlp=255554.8788> <PB=10000000> 
+ColGenEvalAlg final dual bound: 255555 (rounded: 255555)
+----- Add fac. cuts : sep. took 5.52 sec.----- no cuts found  -----
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_94_0_1_OspV (lhs=0.5152)   : [255559.1765, 255561.8049], score = 29.77      <et=8.43>
+SB phase 1 cand.  2 branch on var x_1_241_0_1_OspV (lhs=0.4848)  : [255566.6429, 255566.8636], score = 140.99      <et=8.44>
+SB phase 1 cand.  3 branch on var x_1_242_0_1_OspV (lhs=0.4848)  : [255562.8571, 255568.3333], score = 107.35      <et=8.44>
+SB phase 1 cand.  4 branch on var x_1_0_276_1_OspV (lhs=0.4848)  : [255563.5294, 255567.0000], score = 104.86      <et=8.45>
+SB phase 1 cand.  7 branch on var x_1_286_0_1_OspV (lhs=0.4848)  : [255563.5556, 255572.2154], score = 150.43      <et=8.47>
+SB phase 1 cand.  8 branch on var x_1_0_312_1_OspV (lhs=0.4848)  : [255564.5870, 255570.1667], score = 148.42      <et=8.48>
+SB phase 1 cand. 11 branch on var x_1_369_0_1_OspV (lhs=0.5152)  : [255563.5556, 255571.2436], score = 141.99      <et=8.51>
+SB phase 1 cand. 23 branch on var x_1_283_312_1_OspV (lhs=0.5152): [255564.5870, 255592.0909], score = 361.26      <et=8.59>
+SB phase 1 cand. 30 branch on var x_1_327_373_1_OspV (lhs=0.5152): [255564.5515, 255592.8182], score = 366.98      <et=8.64>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  6> <et=8.83> <Mt= 0.01> <Spt= 0.00> <nCl=194> <DB=255580.2500> <Mlp=255580.2500> <PB=10000000> 
+<DWph=0> <it=  5> <et=8.91> <Mt= 0.00> <Spt= 0.00> <nCl=171> <DB=255564.5515> <Mlp=255564.5515> <PB=10000000> 
+SB phase 2 cand.  1 branch on var x_1_327_373_1_OspV (lhs=0.5152): [255564.5515, 255580.2500], score = 245.41      <et=8.92>
+<DWph=0> <it=  5> <et=8.98> <Mt= 0.01> <Spt= 0.00> <nCl=192> <DB=255579.5000> <Mlp=255579.5000> <PB=10000000> 
+<DWph=0> <it=  5> <et=9.06> <Mt= 0.01> <Spt= 0.00> <nCl=172> <DB=255564.5870> <Mlp=255564.5870> <PB=10000000> 
+SB phase 2 cand.  2 branch on var x_1_283_312_1_OspV (lhs=0.5152): [255564.5870, 255579.5000], score = 239.03      <et=9.07>
+<DWph=0> <it=  6> <et=9.15> <Mt= 0.01> <Spt= 0.01> <nCl=166> <DB=255567.3617> <Mlp=255567.3617> <PB=10000000> 
+<DWph=0> <it=  7> <et=9.25> <Mt= 0.01> <Spt= 0.00> <nCl=172> <DB=255563.5556> <Mlp=255563.5556> <PB=10000000> 
+SB phase 2 cand.  3 branch on var x_1_286_0_1_OspV (lhs=0.4848)  : [255563.5556, 255567.3617], score = 108.31      <et=9.26>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_327_373_1_OspV >= 1 ), value = 255580
+<DWph=2> <it=  1> <et=9.29> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255580.2500> <Mlp=255580.2500> <PB=10000000> 
+<DWph=1> <it=  2> <et=9.30> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255580.2500> <Mlp=255580.2500> <PB=10000000> 
+<DWph=0> <it=  3> <et=9.31> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255580.2500> <Mlp=255580.2500> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255580 (rounded: 255581)
+----- Add fac. cuts : sep. took 4.97 sec.----- no cuts found  -----
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_327_373_1_OspV <= 0 ), value = 255565
+<DWph=2> <it=  1> <et=14.33> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=255564.5515> <Mlp=255564.5515> <PB=10000000> 
+<DWph=1> <it=  2> <et=14.34> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255564.5515> <Mlp=255564.5515> <PB=10000000> 
+<DWph=0> <it=  3> <et=14.36> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255564.5515> <Mlp=255564.5515> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255565 (rounded: 255565)
+----- Add fac. cuts : sep. took 6.01 sec.----- no cuts found  -----
+SB exact phase 3 branch on var x_1_327_373_1_OspV (lhs=0.515152) : [255580.25, 255564.55], tree depth = 1e+12, tree size = 1e+12, score = -1.563
+************************************************************************************************
+**** BaB tree node (N° 3, parent N° 1, depth 1)
+**** Local DB = 255565, global bounds : [ 255565 , 1e+07 ], TIME = 0h0m20s41t = 2041
+**** 2 open nodes, 1818 columns (1621 active), 2 dyn. constrs. (1 active), 804 art. vars. (803 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_286_0_1_OspV (lhs=0.4559)  : [255569.1667, 255572.2154], score = 35.37 (h)  <et=20.42>
+SB phase 1 cand.  2 branch on var x_1_0_241_1_OspV (lhs=0.4779)  : [255573.3125, 255591.8261], score = 238.95      <et=20.43>
+SB phase 1 cand.  3 branch on var x_1_283_312_1_OspV (lhs=0.0441): [255564.5870, 255646.0000], score = 2.89 (h)  <et=20.45>
+SB phase 1 cand.  4 branch on var x_1_0_282_1_OspV (lhs=0.4779)  : [255572.5000, 255576.0000], score = 91.00      <et=20.46>
+SB phase 1 cand.  6 branch on var x_1_0_288_1_OspV (lhs=0.5221)  : [255587.9259, 255588.4667], score = 559.00      <et=20.48>
+SB phase 1 cand.  8 branch on var x_1_288_0_1_OspV (lhs=0.4779)  : [255587.9259, 255588.4667], score = 559.00      <et=20.5>
+SB phase 1 cand. 10 branch on var x_1_0_304_1_OspV (lhs=0.5221)  : [255587.3495, 255588.4667], score = 545.22      <et=20.52>
+SB phase 1 cand. 14 branch on var x_1_0_319_1_OspV (lhs=0.5221)  : [255582.0000, 255608.1277], score = 760.34      <et=20.57>
+SB phase 1 cand. 16 branch on var x_1_0_331_1_OspV (lhs=0.4779)  : [255576.6667, 255611.6777], score = 570.94      <et=20.59>
+SB phase 1 cand. 30 branch on var x_1_283_302_1_OspV (lhs=0.4779): [255576.6667, 255617.3750], score = 639.97      <et=20.74>
+SB phase 1 cand. 32 branch on var x_1_283_319_1_OspV (lhs=0.4779): [255582.0000, 255608.1277], score = 760.34      <et=20.77>
+SB phase 1 cand. 48 branch on var x_1_319_336_1_OspV (lhs=0.5221): [255582.0000, 255609.4028], score = 782.59      <et=20.94>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  6> <et=21.03> <Mt= 0.01> <Spt= 0.00> <nCl= 37> <DB=255588.8421> <Mlp=255588.8421> <PB=10000000> 
+<DWph=0> <it=  4> <et=21.10> <Mt= 0.01> <Spt= 0.00> <nCl= 20> <DB=255576.0000> <Mlp=255576.0000> <PB=10000000> 
+SB phase 2 cand.  1 branch on var x_1_319_336_1_OspV (lhs=0.5221): [255576.0000, 255588.8421], score = 278.09      <et=21.11>
+<DWph=0> <it=  7> <et=21.19> <Mt= 0.01> <Spt= 0.00> <nCl= 34> <DB=255588.2053> <Mlp=255588.2053> <PB=10000000> 
+<DWph=0> <it=  6> <et=21.26> <Mt= 0.01> <Spt= 0.00> <nCl= 24> <DB=255576.0000> <Mlp=255576.0000> <PB=10000000> 
+SB phase 2 cand.  2 branch on var x_1_0_319_1_OspV (lhs=0.5221)  : [255576.0000, 255588.2053], score = 270.80      <et=21.27>
+<DWph=0> <it=  7> <et=21.35> <Mt= 0.01> <Spt= 0.00> <nCl= 34> <DB=255588.2053> <Mlp=255588.2053> <PB=10000000> 
+<DWph=0> <it=  6> <et=21.43> <Mt= 0.00> <Spt= 0.00> <nCl= 24> <DB=255576.0000> <Mlp=255576.0000> <PB=10000000> 
+SB phase 2 cand.  3 branch on var x_1_283_319_1_OspV (lhs=0.4779): [255576.0000, 255588.2053], score = 270.80      <et=21.44>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_319_336_1_OspV >= 1 ), value = 255589
+<DWph=2> <it=  1> <et=21.48> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255588.8421> <Mlp=255588.8421> <PB=10000000> 
+<DWph=1> <it=  2> <et=21.49> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=255588.8421> <Mlp=255588.8421> <PB=10000000> 
+<DWph=0> <it=  3> <et=21.50> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255588.8421> <Mlp=255588.8421> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255589 (rounded: 255589)
+----- Add fac. cuts : R1C(1), max.viol = 0.0263158, aver.viol = 0.0263158, sep/add took 5.54/0 sec. -----
+2206 columns (1667 active), 5 dyn. constrs. (3 active), 811 art. vars. (805 active)
+<DWph=2> <it=  1> <et=27.08> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255588.9756> <Mlp=255588.9756> <PB=10000000> 
+<DWph=1> <it=  2> <et=27.09> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255588.9756> <Mlp=255588.9756> <PB=10000000> 
+<DWph=0> <it=  4> <et=27.12> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=255588.9756> <Mlp=255588.9756> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255589 (rounded: 255589)
+----- Add fac. cuts : sep. took 5.68 sec.----- no cuts found  -----
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_319_336_1_OspV <= 0 ), value = 255576
+<DWph=2> <it=  1> <et=32.85> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255576.0000> <Mlp=255576.0000> <PB=10000000> 
+<DWph=1> <it=  2> <et=32.87> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255576.0000> <Mlp=255576.0000> <PB=10000000> 
+<DWph=0> <it=  3> <et=32.88> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255576.0000> <Mlp=255576.0000> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255576 (rounded: 255576)
+----- Add fac. cuts : sep. took 5.2 sec.----- no cuts found  -----
+SB exact phase 3 branch on var x_1_319_336_1_OspV (lhs=0.522059) : [255588.98, 255576], tree depth = 1e+12, tree size = 1e+12, score = -1.484
+************************************************************************************************
+**** BaB tree node (N° 5, parent N° 3, depth 2)
+**** Local DB = 255576, global bounds : [ 255576 , 1e+07 ], TIME = 0h0m38s11t = 3811
+**** 3 open nodes, 1889 columns (1644 active), 5 dyn. constrs. (2 active), 807 art. vars. (804 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_286_0_1_OspV (lhs=0.7143)  : [255579.9394, 255587.2917], score = 44.48 (h)  <et=38.12>
+SB phase 1 cand.  2 branch on var x_1_26_0_1_OspV (lhs=0.5714)   : [255580.6190, 255581.5714], score = 25.73      <et=38.13>
+SB phase 1 cand.  3 branch on var x_1_319_335_1_OspV (lhs=0.7143): [255578.5000, 255607.7500], score = 79.38 (h)  <et=38.14>
+SB phase 1 cand.  4 branch on var x_1_69_0_1_OspV (lhs=0.4286)   : [255578.6429, 255604.2188], score = 74.58      <et=38.15>
+SB phase 1 cand.  5 branch on var x_1_288_0_1_OspV (lhs=0.7143)  : [255578.5000, 255607.7500], score = 79.38 (h)  <et=38.17>
+SB phase 1 cand.  6 branch on var x_1_0_73_1_OspV (lhs=0.4286)   : [255580.6190, 255596.8372], score = 96.25      <et=38.18>
+SB phase 1 cand. 10 branch on var x_1_0_188_1_OspV (lhs=0.4286)  : [255586.7778, 255589.8000], score = 148.73      <et=38.22>
+SB phase 1 cand. 12 branch on var x_1_0_206_1_OspV (lhs=0.5714)  : [255585.0000, 255594.5000], score = 166.50      <et=38.24>
+SB phase 1 cand. 14 branch on var x_1_206_0_1_OspV (lhs=0.4286)  : [255585.0000, 255594.5000], score = 166.50      <et=38.26>
+SB phase 1 cand. 16 branch on var x_1_231_0_1_OspV (lhs=0.5714)  : [255585.0000, 255594.5000], score = 166.50      <et=38.28>
+SB phase 1 cand. 20 branch on var x_1_0_252_1_OspV (lhs=0.4286)  : [255589.1579, 255594.2917], score = 240.68      <et=38.32>
+SB phase 1 cand. 22 branch on var x_1_252_0_1_OspV (lhs=0.5714)  : [255589.1579, 255594.2917], score = 240.68      <et=38.34>
+SB phase 1 cand. 28 branch on var x_1_0_285_1_OspV (lhs=0.5714)  : [255589.1579, 255589.2982], score = 174.98      <et=38.4>
+SB phase 1 cand. 38 branch on var x_1_0_298_1_OspV (lhs=0.4286)  : [255589.1579, 255593.9250], score = 235.86      <et=38.49>
+SB phase 1 cand. 46 branch on var x_1_343_0_1_OspV (lhs=0.4286)  : [255589.1579, 255594.2917], score = 240.68      <et=38.57>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  4> <et=38.66> <Mt= 0.00> <Spt= 0.00> <nCl=  8> <DB=255593.3636> <Mlp=255593.3636> <PB=10000000> 
+<DWph=0> <it=  4> <et=38.72> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=255588.9412> <Mlp=255588.9412> <PB=10000000> 
+SB phase 2 cand.  1 branch on var x_1_252_0_1_OspV (lhs=0.5714): [255588.9412, 255593.3636], score = 224.71      <et=38.73>
+<DWph=0> <it=  4> <et=38.78> <Mt= 0.01> <Spt= 0.00> <nCl=  7> <DB=255593.3636> <Mlp=255593.3636> <PB=10000000> 
+<DWph=0> <it=  4> <et=38.84> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=255588.9412> <Mlp=255588.9412> <PB=10000000> 
+SB phase 2 cand.  2 branch on var x_1_0_252_1_OspV (lhs=0.4286): [255588.9412, 255593.3636], score = 224.71      <et=38.85>
+<DWph=0> <it=  4> <et=38.89> <Mt= 0.01> <Spt= 0.00> <nCl=  6> <DB=255593.3636> <Mlp=255593.3636> <PB=10000000> 
+<DWph=0> <it=  4> <et=38.95> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <DB=255588.9412> <Mlp=255588.9412> <PB=10000000> 
+SB phase 2 cand.  3 branch on var x_1_343_0_1_OspV (lhs=0.4286): [255588.9412, 255593.3636], score = 224.71      <et=38.96>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_0_252_1_OspV >= 1 ), value = 255593
+<DWph=2> <it=  1> <et=39.00> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255593.3636> <Mlp=255593.3636> <PB=10000000> 
+<DWph=1> <it=  2> <et=39.01> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255593.3636> <Mlp=255593.3636> <PB=10000000> 
+<DWph=0> <it=  3> <et=39.02> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255593.3636> <Mlp=255593.3636> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255593 (rounded: 255594)
+----- Add fac. cuts : sep. took 5.04 sec.----- no cuts found  -----
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_0_252_1_OspV <= 0 ), value = 255589
+<DWph=2> <it=  1> <et=44.11> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255588.9412> <Mlp=255588.9412> <PB=10000000> 
+<DWph=1> <it=  2> <et=44.12> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255588.9412> <Mlp=255588.9412> <PB=10000000> 
+<DWph=0> <it=  3> <et=44.13> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255588.9412> <Mlp=255588.9412> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255589 (rounded: 255589)
+----- Add fac. cuts : sep. took 5.33 sec.----- no cuts found  -----
+SB exact phase 3 branch on var x_1_0_252_1_OspV (lhs=0.428571) : [255593.36, 255588.94], tree depth = 1e+12, tree size = 1e+12, score = -1.687
+************************************************************************************************
+**** BaB tree node (N° 7, parent N° 5, depth 3)
+**** Local DB = 255589, global bounds : [ 255581 , 1e+07 ], TIME = 0h0m49s48t = 4948
+**** 4 open nodes, 1943 columns (1653 active), 7 dyn. constrs. (3 active), 809 art. vars. (805 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_286_0_1_OspV (lhs=0.9412)  : [255589.0909, 255607.0930], score = 2.72 (h)  <et=49.5>
+SB phase 1 cand.  2 branch on var x_1_51_0_1_OspV (lhs=0.5294)   : [255593.0769, 255601.5000], score = 51.94      <et=49.5>
+SB phase 1 cand.  3 branch on var x_1_319_335_1_OspV (lhs=0.7647): [255593.8182, 255632.4286], score = 212.09 (h)  <et=49.52>
+SB phase 1 cand.  4 branch on var x_1_0_64_1_OspV (lhs=0.5294)   : [255599.3636, 255605.1471], score = 168.91      <et=49.53>
+SB phase 1 cand.  5 branch on var x_1_288_0_1_OspV (lhs=0.7647)  : [255593.8182, 255632.4286], score = 212.09 (h)  <et=49.54>
+SB phase 1 cand.  6 branch on var x_1_64_0_1_OspV (lhs=0.4706)   : [255599.3636, 255605.1471], score = 168.91      <et=49.55>
+SB phase 1 cand.  7 branch on var x_1_0_288_1_OspV (lhs=0.2353)  : [255593.8182, 255632.4286], score = 212.09 (h)  <et=49.56>
+SB phase 1 cand.  9 branch on var x_1_288_335_1_OspV (lhs=0.2353): [255593.8182, 255632.4286], score = 212.09 (h)  <et=49.58>
+SB phase 1 cand. 21 branch on var x_1_0_206_1_OspV (lhs=0.7059)  : [255595.7955, 255629.6275], score = 278.88 (h)  <et=49.69>
+SB phase 1 cand. 22 branch on var x_1_72_100_1_OspV (lhs=0.4706) : [255600.5938, 255607.2298], score = 213.11      <et=49.7>
+SB phase 1 cand. 23 branch on var x_1_206_0_1_OspV (lhs=0.2941)  : [255595.7955, 255629.6275], score = 278.88 (h)  <et=49.72>
+SB phase 1 cand. 25 branch on var x_1_231_0_1_OspV (lhs=0.7059)  : [255595.7955, 255624.1250], score = 241.16 (h)  <et=49.74>
+SB phase 1 cand. 50 branch on var x_1_237_0_1_OspV (lhs=0.5882)  : [255600.3333, 255625.0000], score = 410.79      <et=49.95>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  6> <et=50.02> <Mt= 0.01> <Spt= 0.00> <nCl=  5> <DB=255620.2703> <Mlp=255620.2703> <PB=10000000> 
+<DWph=0> <it=  6> <et=50.09> <Mt= 0.01> <Spt= 0.00> <nCl=  7> <DB=255599.0000> <Mlp=255599.0000> <PB=10000000> 
+SB phase 2 cand.  1 branch on var x_1_237_0_1_OspV (lhs=0.5882): [255599.0000, 255620.2703], score = 315.13      <et=50.1>
+<DWph=0> <it=  5> <et=50.17> <Mt= 0.01> <Spt= 0.00> <nCl= 14> <DB=255623.4583> <Mlp=255623.4583> <PB=10000000> 
+<DWph=0> <it=  4> <et=50.23> <Mt= 0.00> <Spt= 0.00> <nCl=  6> <DB=255595.7955> <Mlp=255595.7955> <PB=10000000> 
+SB phase 2 cand.  2 branch on var x_1_0_206_1_OspV (lhs=0.7059): [255595.7955, 255623.4583], score = 236.59 (h)  <et=50.24>
+<DWph=0> <it=  4> <et=50.29> <Mt= 0.00> <Spt= 0.00> <nCl= 12> <DB=255623.4583> <Mlp=255623.4583> <PB=10000000> 
+<DWph=0> <it=  4> <et=50.34> <Mt= 0.01> <Spt= 0.00> <nCl=  7> <DB=255595.7955> <Mlp=255595.7955> <PB=10000000> 
+SB phase 2 cand.  3 branch on var x_1_206_0_1_OspV (lhs=0.2941): [255595.7955, 255623.4583], score = 236.59 (h)  <et=50.36>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_237_0_1_OspV <= 0 ), value = 255620
+<DWph=2> <it=  1> <et=50.39> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255620.2703> <Mlp=255620.2703> <PB=10000000> 
+<DWph=1> <it=  2> <et=50.40> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255620.2703> <Mlp=255620.2703> <PB=10000000> 
+<DWph=0> <it=  3> <et=50.41> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255620.2703> <Mlp=255620.2703> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255620 (rounded: 255621)
+----- Add fac. cuts : sep. took 4.32 sec.----- no cuts found  -----
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_237_0_1_OspV >= 1 ), value = 255599
+<DWph=2> <it=  1> <et=54.77> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255599.0000> <Mlp=255599.0000> <PB=10000000> 
+<DWph=1> <it=  2> <et=54.78> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255599.0000> <Mlp=255599.0000> <PB=10000000> 
+<DWph=0> <it=  3> <et=54.80> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255599.0000> <Mlp=255599.0000> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255599 (rounded: 255599)
+----- Add fac. cuts : sep. took 5 sec.----- no cuts found  -----
+SB exact phase 3 branch on var x_1_237_0_1_OspV (lhs=0.588235) : [255620.27, 255599], tree depth = 1e+12, tree size = 1e+12, score = -1.361
+************************************************************************************************
+**** BaB tree node (N° 9, parent N° 7, depth 4)
+**** Local DB = 255599, global bounds : [ 255581 , 1e+07 ], TIME = 0h0m59s83t = 5983
+**** 5 open nodes, 1992 columns (1679 active), 9 dyn. constrs. (4 active), 811 art. vars. (806 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_0_206_1_OspV (lhs=0.8571)  : [255602.9091, 255632.4444], score = 130.74 (h)  <et=59.84>
+SB phase 1 cand.  2 branch on var x_1_26_0_1_OspV (lhs=0.4286)   : [255601.0000, 255603.5556], score = 9.11      <et=59.85>
+SB phase 1 cand.  3 branch on var x_1_206_0_1_OspV (lhs=0.1429)  : [255602.9091, 255632.4444], score = 130.74 (h)  <et=59.86>
+SB phase 1 cand.  4 branch on var x_1_51_0_1_OspV (lhs=0.4286)   : [255606.0000, 255606.2121], score = 50.48      <et=59.87>
+SB phase 1 cand.  7 branch on var x_1_72_100_1_OspV (lhs=0.4286) : [255604.8667, 255620.0625], score = 123.57 (h)  <et=59.9>
+SB phase 1 cand. 13 branch on var x_1_64_0_1_OspV (lhs=0.5714)   : [255610.3284, 255612.1429], score = 148.89 (h)  <et=59.95>
+SB phase 1 cand. 15 branch on var x_1_64_107_1_OspV (lhs=0.4286) : [255610.3284, 255612.1429], score = 148.89 (h)  <et=59.96>
+SB phase 1 cand. 17 branch on var x_1_0_64_1_OspV (lhs=0.4286)   : [255610.3284, 255612.1429], score = 148.89 (h)  <et=59.98>
+SB phase 1 cand. 48 branch on var x_1_189_231_1_OspV (lhs=0.4286): [255610.2118, 255618.6071], score = 219.83      <et=60.24>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  6> <et=60.32> <Mt= 0.01> <Spt= 0.00> <nCl= 12> <DB=255617.0000> <Mlp=255617.0000> <PB=10000000> 
+<DWph=0> <it=  4> <et=60.38> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <DB=255609.3248> <Mlp=255609.3248> <PB=10000000> 
+SB phase 2 cand.  1 branch on var x_1_189_231_1_OspV (lhs=0.4286): [255609.3248, 255617.0000], score = 185.85      <et=60.39>
+<DWph=0> <it=  4> <et=60.44> <Mt= 0.01> <Spt= 0.00> <nCl=  6> <DB=255611.2500> <Mlp=255611.2500> <PB=10000000> 
+<DWph=0> <it=  5> <et=60.51> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <DB=255608.1792> <Mlp=255608.1792> <PB=10000000> 
+SB phase 2 cand.  2 branch on var x_1_64_0_1_OspV (lhs=0.5714)   : [255608.1792, 255611.2500], score = 112.45 (h)  <et=60.52>
+<DWph=0> <it=  4> <et=60.57> <Mt= 0.01> <Spt= 0.00> <nCl=  7> <DB=255611.2500> <Mlp=255611.2500> <PB=10000000> 
+<DWph=0> <it=  4> <et=60.63> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=255608.1792> <Mlp=255608.1792> <PB=10000000> 
+SB phase 2 cand.  3 branch on var x_1_0_64_1_OspV (lhs=0.4286)   : [255608.1792, 255611.2500], score = 112.45 (h)  <et=60.64>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_189_231_1_OspV <= 0 ), value = 255617
+<DWph=2> <it=  1> <et=60.67> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255617.0000> <Mlp=255617.0000> <PB=10000000> 
+<DWph=1> <it=  2> <et=60.68> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=255617.0000> <Mlp=255617.0000> <PB=10000000> 
+<DWph=0> <it=  3> <et=60.70> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255617.0000> <Mlp=255617.0000> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255617 (rounded: 255617)
+----- Add fac. cuts : R1C(1), max.viol = 0.2, aver.viol = 0.2, sep/add took 5.48/0 sec. -----
+2099 columns (1700 active), 12 dyn. constrs. (6 active), 818 art. vars. (808 active)
+<DWph=2> <it=  1> <et=66.21> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255619.1000> <Mlp=255619.1000> <PB=10000000> 
+<DWph=1> <it=  2> <et=66.22> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255619.1000> <Mlp=255619.1000> <PB=10000000> 
+<DWph=0> <it=  5> <et=66.26> <Mt= 0.00> <Spt= 0.00> <nCl=  5> <DB=255618.7500> <Mlp=255618.7500> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255619 (rounded: 255619)
+----- Add fac. cuts : sep. took 5.16 sec.----- no cuts found  -----
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_189_231_1_OspV >= 1 ), value = 255609
+<DWph=2> <it=  1> <et=71.48> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255609.3248> <Mlp=255609.3248> <PB=10000000> 
+<DWph=1> <it=  2> <et=71.49> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=255609.3248> <Mlp=255609.3248> <PB=10000000> 
+<DWph=0> <it=  3> <et=71.50> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255609.3248> <Mlp=255609.3248> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255609 (rounded: 255610)
+----- Add fac. cuts : R1C(1), max.viol = 0.179487, aver.viol = 0.179487, sep/add took 5.11/0 sec. -----
+2049 columns (1703 active), 13 dyn. constrs. (6 active), 815 art. vars. (808 active)
+<DWph=2> <it=  1> <et=76.64> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255610.2118> <Mlp=255610.2118> <PB=10000000> 
+<DWph=1> <it=  2> <et=76.65> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255610.2118> <Mlp=255610.2118> <PB=10000000> 
+<DWph=0> <it=  3> <et=76.67> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255610.2118> <Mlp=255610.2118> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255610 (rounded: 255611)
+----- Add fac. cuts : sep. took 5.39 sec.----- no cuts found  -----
+SB exact phase 3 branch on var x_1_189_231_1_OspV (lhs=0.428571) : [255618.75, 255610.21], tree depth = 1e+12, tree size = 1e+12, score = -1.684
+************************************************************************************************
+**** BaB tree node (N° 11, parent N° 9, depth 5)
+**** Local DB = 255610, global bounds : [ 255581 , 1e+07 ], TIME = 0h1m22s9t = 8209
+**** 6 open nodes, 2052 columns (1706 active), 13 dyn. constrs. (6 active), 815 art. vars. (808 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_0_206_1_OspV (lhs=0.5176)  : [255616.0000, 255632.4444], score = 128.69 (h)  <et=82.11>
+SB phase 1 cand.  2 branch on var x_1_0_189_1_OspV (lhs=0.4824)  : [255616.0000, 255631.8889], score = 125.47      <et=82.12>
+SB phase 1 cand.  3 branch on var x_1_206_0_1_OspV (lhs=0.4824)  : [255616.0000, 255632.4444], score = 128.69 (h)  <et=82.13>
+SB phase 1 cand.  4 branch on var x_1_139_187_1_OspV (lhs=0.5176): [255616.0000, 255632.4444], score = 128.69      <et=82.14>
+SB phase 1 cand.  5 branch on var x_1_0_64_1_OspV (lhs=0.4353)   : [255621.0152, 255622.3333], score = 130.95 (h)  <et=82.16>
+SB phase 1 cand.  7 branch on var x_1_64_0_1_OspV (lhs=0.5647)   : [255621.0152, 255622.3333], score = 130.95 (h)  <et=82.18>
+SB phase 1 cand. 15 branch on var x_1_64_107_1_OspV (lhs=0.4353) : [255621.0152, 255622.3333], score = 130.95 (h)  <et=82.27>
+SB phase 1 cand. 36 branch on var x_1_0_36_1_OspV (lhs=0.5647)   : [255615.1316, 255642.7000], score = 159.84      <et=82.44>
+SB phase 1 cand. 38 branch on var x_1_0_40_1_OspV (lhs=0.4353)   : [255615.1316, 255647.1400], score = 181.68      <et=82.46>
+SB phase 1 cand. 40 branch on var x_1_15_36_1_OspV (lhs=0.4353)  : [255615.1316, 255642.7000], score = 159.84      <et=82.48>
+SB phase 1 cand. 42 branch on var x_1_15_40_1_OspV (lhs=0.5647)  : [255615.1316, 255642.7000], score = 159.84      <et=82.5>
+SB phase 1 cand. 50 branch on var x_1_34_95_1_OspV (lhs=0.4353)  : [255617.8375, 255638.0000], score = 211.91      <et=82.58>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  4> <et=82.63> <Mt= 0.01> <Spt= 0.00> <nCl= 12> <DB=255634.7500> <Mlp=255634.7500> <PB=10000000> 
+<DWph=0> <it=  4> <et=82.69> <Mt= 0.00> <Spt= 0.00> <nCl=  7> <DB=255617.5000> <Mlp=255617.5000> <PB=10000000> 
+SB phase 2 cand.  1 branch on var x_1_34_95_1_OspV (lhs=0.4353): [255617.5000, 255634.7500], score = 178.84      <et=82.7>
+<DWph=0> <it=  7> <et=82.78> <Mt= 0.01> <Spt= 0.00> <nCl= 14> <DB=255642.4000> <Mlp=255642.4000> <PB=10000000> 
+<DWph=0> <it=  4> <et=82.84> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=255615.1316> <Mlp=255615.1316> <PB=10000000> 
+SB phase 2 cand.  2 branch on var x_1_0_40_1_OspV (lhs=0.4353) : [255615.1316, 255642.4000], score = 158.36      <et=82.85>
+<DWph=0> <it=  4> <et=82.90> <Mt= 0.01> <Spt= 0.00> <nCl=  4> <DB=255634.5000> <Mlp=255634.5000> <PB=10000000> 
+<DWph=0> <it=  4> <et=82.96> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=255615.1316> <Mlp=255615.1316> <PB=10000000> 
+SB phase 2 cand.  3 branch on var x_1_15_36_1_OspV (lhs=0.4353): [255615.1316, 255634.5000], score = 119.49      <et=82.97>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_34_95_1_OspV >= 1 ), value = 255635
+<DWph=2> <it=  1> <et=83.00> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255634.7500> <Mlp=255634.7500> <PB=10000000> 
+<DWph=1> <it=  2> <et=83.01> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255634.7500> <Mlp=255634.7500> <PB=10000000> 
+<DWph=0> <it=  3> <et=83.03> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255634.7500> <Mlp=255634.7500> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255635 (rounded: 255635)
+----- Add fac. cuts : sep. took 4.3 sec.----- no cuts found  -----
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_34_95_1_OspV <= 0 ), value = 255618
+<DWph=2> <it=  1> <et=87.37> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=255617.5000> <Mlp=255617.5000> <PB=10000000> 
+<DWph=1> <it=  2> <et=87.38> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255617.5000> <Mlp=255617.5000> <PB=10000000> 
+<DWph=0> <it=  3> <et=87.40> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255617.5000> <Mlp=255617.5000> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255618 (rounded: 255618)
+----- Add fac. cuts : sep. took 4.4 sec.----- no cuts found  -----
+SB exact phase 3 branch on var x_1_34_95_1_OspV (lhs=0.435294) : [255634.75, 255617.5], tree depth = 1e+12, tree size = 1e+12, score = -1.794
+************************************************************************************************
+**** BaB tree node (N° 13, parent N° 11, depth 6)
+**** Local DB = 255618, global bounds : [ 255581 , 1e+07 ], TIME = 0h1m31s83t = 9183
+**** 7 open nodes, 2081 columns (1716 active), 15 dyn. constrs. (7 active), 817 art. vars. (809 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_0_206_1_OspV (lhs=0.6250)  : [255623.8750, 255640.4167], score = 146.09 (h)  <et=91.84>
+SB phase 1 cand.  2 branch on var x_1_0_250_1_OspV (lhs=0.5000)  : [255626.0000, 255632.5000], score = 127.50      <et=91.85>
+SB phase 1 cand.  3 branch on var x_1_206_0_1_OspV (lhs=0.3750)  : [255623.8750, 255640.4167], score = 146.09 (h)  <et=91.86>
+SB phase 1 cand. 11 branch on var x_1_231_0_1_OspV (lhs=0.6250)  : [255623.8750, 255637.7143], score = 128.87 (h)  <et=91.93>
+SB phase 1 cand. 17 branch on var x_1_139_187_1_OspV (lhs=0.6250): [255624.0000, 255640.4167], score = 148.96 (h)  <et=91.98>
+SB phase 1 cand. 21 branch on var x_1_187_230_1_OspV (lhs=0.6250): [255624.0000, 255640.4167], score = 148.96 (h)  <et=92.02>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  3> <et=92.29> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255640.4167> <Mlp=255640.4167> <PB=10000000> 
+<DWph=0> <it=  4> <et=92.35> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=255624.0000> <Mlp=255624.0000> <PB=10000000> 
+SB phase 2 cand.  1 branch on var x_1_139_187_1_OspV (lhs=0.6250): [255624.0000, 255640.4167], score = 148.96 (h)  <et=92.36>
+<DWph=0> <it=  3> <et=92.40> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=255640.4167> <Mlp=255640.4167> <PB=10000000> 
+<DWph=0> <it=  4> <et=92.46> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=255624.0000> <Mlp=255624.0000> <PB=10000000> 
+SB phase 2 cand.  2 branch on var x_1_187_230_1_OspV (lhs=0.6250): [255624.0000, 255640.4167], score = 148.96 (h)  <et=92.47>
+<DWph=0> <it=  4> <et=92.52> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=255640.4167> <Mlp=255640.4167> <PB=10000000> 
+<DWph=0> <it=  3> <et=92.57> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=255623.8750> <Mlp=255623.8750> <PB=10000000> 
+SB phase 2 cand.  3 branch on var x_1_0_206_1_OspV (lhs=0.6250)  : [255623.8750, 255640.4167], score = 146.09 (h)  <et=92.59>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_139_187_1_OspV <= 0 ), value = 255640
+<DWph=2> <it=  1> <et=92.62> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255640.4167> <Mlp=255640.4167> <PB=10000000> 
+<DWph=1> <it=  2> <et=92.63> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255640.4167> <Mlp=255640.4167> <PB=10000000> 
+<DWph=0> <it=  3> <et=92.65> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <DB=255640.4167> <Mlp=255640.4167> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255640 (rounded: 255641)
+----- Add fac. cuts : R1C(1), max.viol = 0.166667, aver.viol = 0.166667, sep/add took 4.94/0 sec. -----
+2097 columns (1721 active), 18 dyn. constrs. (9 active), 824 art. vars. (811 active)
+<DWph=2> <it=  1> <et=97.62> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255640.4167> <Mlp=255640.4167> <PB=10000000> 
+<DWph=1> <it=  2> <et=97.63> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255640.4167> <Mlp=255640.4167> <PB=10000000> 
+<DWph=0> <it=  3> <et=97.63> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255640.4167> <Mlp=255640.4167> <PB=10000000> 
+ColGenEvalAlg final dual bound: 255640 (rounded: 255641)
+----- Add fac. cuts : sep. took 4.88 sec.----- no cuts found  -----
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_139_187_1_OspV >= 1 ), value = 255624
+<DWph=2> <it=  1> <et=102.55> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255624.0000> <Mlp=255624.0000> <PB=10000000> 
+<DWph=1> <it=  2> <et=102.56> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255624.0000> <Mlp=255624.0000> <PB=10000000> 
+<DWph=0> <it=  3> <et=102.57> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255624.0000> <Mlp=255624.0000> <PB=10000000> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 41717 (100%)
+ColGenEvalAlg final dual bound: 255624 (rounded: 255624)
+----- Add fac. cuts : sep. took 3.89 sec.----- no cuts found  -----
+SB exact phase 3 branch on var x_1_139_187_1_OspV (lhs=0.625) : [255640.42, 255624], tree depth = 1e+12, tree size = 1e+12, score = -1.957 (h)
+************************************************************************************************
+**** BaB tree node (N° 15, parent N° 13, depth 7)
+**** Local DB = 255624, global bounds : [ 255581 , 1e+07 ], TIME = 0h1m46s49t = 10649
+**** 8 open nodes, 2089 columns (1719 active), 18 dyn. constrs. (7 active), 820 art. vars. (809 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_286_0_1_OspV (lhs=0.5000)  : [255633.0000, 255633.4000], score = 84.60 (h)  <et=106.5>
+SB phase 1 cand.  2 branch on var x_1_0_43_1_OspV (lhs=0.5000)   : [255629.5000, 255633.5000], score = 52.25      <et=106.51>
+SB phase 1 cand.  3 branch on var x_1_72_100_1_OspV (lhs=0.5000) : [255633.5000, 255634.6667], score = 101.33 (h)  <et=106.52>
+SB phase 1 cand.  5 branch on var x_1_0_253_1_OspV (lhs=0.5000)  : [255632.7500, 255640.7500], score = 146.56 (h)  <et=106.54>
+SB phase 1 cand.  7 branch on var x_1_253_0_1_OspV (lhs=0.5000)  : [255632.7500, 255640.7500], score = 146.56 (h)  <et=106.55>
+SB phase 1 cand. 13 branch on var x_1_0_250_1_OspV (lhs=0.5000)  : [255633.7368, 255638.0000], score = 136.32 (h)  <et=106.6>
+SB phase 1 cand. 20 branch on var x_1_0_121_1_OspV (lhs=0.5000)  : [255633.5000, 255647.0000], score = 218.50      <et=106.66>
+SB phase 1 cand. 22 branch on var x_1_121_0_1_OspV (lhs=0.5000)  : [255633.5000, 255647.0000], score = 218.50      <et=106.68>
+SB phase 1 cand. 32 branch on var x_1_0_166_1_OspV (lhs=0.5000)  : [255633.5000, 255647.0000], score = 218.50      <et=106.75>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  5> <et=106.94> <Mt= 0.01> <Spt= 0.00> <nCl=  9> <DB=255647.0000> <Mlp=255647.0000> <PB=255647> 
+<DWph=0> <it=  4> <et=107.00> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <DB=255630.0000> <Mlp=255630.0000> <PB=255647> 
+SB phase 2 cand.  1 branch on var x_1_0_121_1_OspV (lhs=0.5000): [255630.0000, 255647.0000], score = 138.00      <et=107.01>
+<DWph=0> <it=  4> <et=107.06> <Mt= 0.01> <Spt= 0.00> <nCl=  8> <DB=255647.0000> <Mlp=255647.0000> <PB=255647> 
+<DWph=0> <it=  4> <et=107.12> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <DB=255630.0000> <Mlp=255630.0000> <PB=255647> 
+SB phase 2 cand.  2 branch on var x_1_121_0_1_OspV (lhs=0.5000): [255630.0000, 255647.0000], score = 138.00      <et=107.13>
+<DWph=0> <it=  4> <et=107.18> <Mt= 0.00> <Spt= 0.00> <nCl=  9> <DB=255647.0000> <Mlp=255647.0000> <PB=255647> 
+<DWph=0> <it=  4> <et=107.24> <Mt= 0.01> <Spt= 0.00> <nCl=  4> <DB=255630.0000> <Mlp=255630.0000> <PB=255647> 
+SB phase 2 cand.  3 branch on var x_1_0_166_1_OspV (lhs=0.5000): [255630.0000, 255647.0000], score = 138.00      <et=107.25>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_0_121_1_OspV >= 1 ), value = 255647
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_0_121_1_OspV <= 0 ), value = 255630
+<DWph=2> <it=  1> <et=107.28> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255630.0000> <Mlp=255630.0000> <PB=255647> 
+<DWph=1> <it=  2> <et=107.29> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255630.0000> <Mlp=255630.0000> <PB=255647> 
+<DWph=0> <it=  3> <et=107.30> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255630.0000> <Mlp=255630.0000> <PB=255647> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 631 (1.51%)
+ColGenEvalAlg final dual bound: 255630 (rounded: 255630)
+----- Terminating the node by MIP -----
+MIP found solution with value 255644
+ SB phase 3 candidate 1 is conquered !
+New model incumbent solution 255644, TIME = 0h1m47s36t = 10736
+************************************************************************************************
+**** BaB tree node (N° 14, parent N° 13, depth 7)
+**** Local DB = 255640, global bounds : [ 255581 , 255644 ], TIME = 0h1m47s37t = 10737
+**** 7 open nodes, 2199 columns (782 active), 20 dyn. constrs. (8 active), 822 art. vars. (810 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_0_64_1_OspV (lhs=0.6667)   : [255645.4130, 255650.3649], score = 49.70 (h)  <et=107.4>
+SB phase 1 cand.  2 branch on var x_1_242_0_1_OspV (lhs=0.5000)  : [255648.2671, 255649.1818], score = 68.81      <et=107.41>
+SB phase 1 cand.  3 branch on var x_1_64_0_1_OspV (lhs=0.3333)   : [255645.4130, 255650.3649], score = 49.70 (h)  <et=107.42>
+SB phase 1 cand.  5 branch on var x_1_286_0_1_OspV (lhs=0.1667)  : [255644.5556, 255653.6000], score = 54.56 (h)  <et=107.43>
+SB phase 1 cand.  7 branch on var x_1_0_188_1_OspV (lhs=0.7500)  : [255644.7895, 255652.6667], score = 53.57 (h)  <et=107.45>
+SB phase 1 cand.  8 branch on var x_1_276_0_1_OspV (lhs=0.5000)  : [255649.1818, 255655.2692], score = 130.18      <et=107.46>
+SB phase 1 cand. 12 branch on var x_1_211_252_1_OspV (lhs=0.5000): [255649.0000, 255649.1818], score = 75.23      <et=107.49>
+SB phase 1 cand. 13 branch on var x_1_0_253_1_OspV (lhs=0.5833)  : [255647.1341, 255652.1000], score = 78.48 (h)  <et=107.5>
+SB phase 1 cand. 14 branch on var x_1_242_276_1_OspV (lhs=0.5000): [255649.1818, 255655.2692], score = 130.18      <et=107.51>
+SB phase 1 cand. 15 branch on var x_1_0_276_1_OspV (lhs=0.5000)  : [255649.1818, 255655.2692], score = 130.18 (h)  <et=107.52>
+SB phase 1 cand. 27 branch on var x_1_0_330_1_OspV (lhs=0.5000)  : [255649.1818, 255655.2692], score = 130.18 (h)  <et=107.61>
+SB phase 1 cand. 30 branch on var x_1_330_380_1_OspV (lhs=0.5000): [255649.1818, 255655.2692], score = 130.18      <et=107.64>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  4> <et=107.86> <Mt= 0.01> <Spt= 0.00> <nCl=  1> <DB=255655.0000> <Mlp=255655.0000> <PB=255644> 
+<DWph=0> <it=  5> <et=107.95> <Mt= 0.00> <Spt= 0.00> <nCl=  6> <DB=255649.0588> <Mlp=255649.0588> <PB=255644> 
+ SB phase 2 candidate 1 is conquered !
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_0_330_1_OspV >= 1 ), value = 255655
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_0_330_1_OspV <= 0 ), value = 255649
+ SB phase 3 candidate 1 is conquered !
+************************************************************************************************
+**** BaB tree node (N° 12, parent N° 11, depth 6)
+**** Local DB = 255635, global bounds : [ 255581 , 255644 ], TIME = 0h1m47s97t = 10797
+**** 6 open nodes, 2103 columns (1738 active), 23 dyn. constrs. (10 active), 825 art. vars. (812 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_139_187_1_OspV (lhs=0.7500): [255639.4000, 255662.8392], score = 38.36 (h)  <et=108>
+SB phase 1 cand.  2 branch on var x_1_141_0_1_OspV (lhs=0.5000)  : [255637.8571, 255643.8800], score = 25.63      <et=108.01>
+SB phase 1 cand.  3 branch on var x_1_0_121_1_OspV (lhs=0.2500)  : [255638.4306, 255661.0000], score = 30.36 (h)  <et=108.02>
+SB phase 1 cand.  4 branch on var x_1_132_176_1_OspV (lhs=0.5000): [255642.7500, 255648.0714], score = 66.00      <et=108.03>
+SB phase 1 cand.  5 branch on var x_1_206_0_1_OspV (lhs=0.2500)  : [255638.7143, 255662.9775], score = 32.71 (h)  <et=108.04>
+SB phase 1 cand.  6 branch on var x_1_132_189_1_OspV (lhs=0.5000): [255638.8000, 255648.0714], score = 33.41      <et=108.05>
+SB phase 1 cand.  7 branch on var x_1_64_0_1_OspV (lhs=0.2500)   : [255641.3600, 255644.5600], score = 54.53 (h)  <et=108.06>
+SB phase 1 cand.  9 branch on var x_1_0_64_1_OspV (lhs=0.7500)   : [255641.3600, 255644.5600], score = 54.53 (h)  <et=108.09>
+SB phase 1 cand. 23 branch on var x_1_0_330_1_OspV (lhs=0.7500)  : [255646.2105, 255652.0000], score = 197.69 (h)  <et=108.22>
+SB phase 1 cand. 27 branch on var x_1_241_304_1_OspV (lhs=0.7500): [255642.7143, 255648.4118], score = 65.71 (h)  <et=108.26>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  5> <et=108.52> <Mt= 0.01> <Spt= 0.00> <nCl= 10> <DB=255645.3333> <Mlp=255645.3333> <PB=255644> 
+<DWph=0> <it=  5> <et=108.61> <Mt= 0.00> <Spt= 0.00> <nCl= 13> <DB=255641.6667> <Mlp=255641.6667> <PB=255644> 
+SB phase 2 cand.  1 branch on var x_1_0_330_1_OspV (lhs=0.7500)  : [255641.6667, 255645.3333], score = 57.06 (h)  <et=108.62>
+<DWph=0> <it=  4> <et=108.67> <Mt= 0.01> <Spt= 0.00> <nCl= 10> <DB=255645.5000> <Mlp=255645.5000> <PB=255644> 
+<DWph=0> <it=  3> <et=108.73> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255642.7500> <Mlp=255642.7500> <PB=255644> 
+SB phase 2 cand.  2 branch on var x_1_132_176_1_OspV (lhs=0.5000): [255642.7500, 255645.5000], score = 66.00      <et=108.74>
+<DWph=0> <it=  5> <et=108.79> <Mt= 0.01> <Spt= 0.00> <nCl=  3> <DB=255644.6000> <Mlp=255644.6000> <PB=255644> 
+<DWph=0> <it=  3> <et=108.85> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255642.7143> <Mlp=255642.7143> <PB=255644> 
+SB phase 2 cand.  3 branch on var x_1_241_304_1_OspV (lhs=0.7500): [255642.7143, 255644.6000], score = 65.71 (h)  <et=108.86>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_132_176_1_OspV <= 0 ), value = 255646
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_132_176_1_OspV >= 1 ), value = 255643
+<DWph=2> <it=  1> <et=108.89> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255642.7500> <Mlp=255642.7500> <PB=255644> 
+<DWph=1> <it=  2> <et=108.90> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255642.7500> <Mlp=255642.7500> <PB=255644> 
+<DWph=0> <it=  3> <et=108.92> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255642.7500> <Mlp=255642.7500> <PB=255644> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 420 (1.01%)
+ColGenEvalAlg final dual bound: 255643 (rounded: 255643)
+----- Terminating the node by MIP -----
+ SB phase 3 candidate 1 is conquered !
+************************************************************************************************
+**** BaB tree node (N° 10, parent N° 9, depth 5)
+**** Local DB = 255619, global bounds : [ 255581 , 255644 ], TIME = 0h1m48s96t = 10896
+**** 5 open nodes, 2103 columns (527 active), 15 dyn. constrs. (7 active), 817 art. vars. (809 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_139_187_1_OspV (lhs=0.7500): [255621.7778, 255657.2857], score = 73.42 (h)  <et=108.99>
+SB phase 1 cand.  2 branch on var x_1_26_0_1_OspV (lhs=0.5000)   : [255621.9375, 255623.4242], score = 14.90      <et=109>
+SB phase 1 cand.  3 branch on var x_1_132_176_1_OspV (lhs=0.7500): [255620.5263, 255642.2000], score = 41.65 (h)  <et=109.01>
+SB phase 1 cand.  4 branch on var x_1_37_0_1_OspV (lhs=0.5000)   : [255634.8000, 255634.8889], score = 259.03      <et=109.02>
+SB phase 1 cand.  5 branch on var x_1_0_121_1_OspV (lhs=0.2500)  : [255620.6000, 255682.0000], score = 44.86 (h)  <et=109.03>
+SB phase 1 cand.  8 branch on var x_1_0_53_1_OspV (lhs=0.5000)   : [255634.7895, 255634.8000], score = 257.43      <et=109.06>
+SB phase 1 cand. 10 branch on var x_1_54_0_1_OspV (lhs=0.5000)   : [255634.8000, 255634.8889], score = 259.03      <et=109.08>
+SB phase 1 cand. 22 branch on var x_1_0_156_1_OspV (lhs=0.5000)  : [255634.7667, 255635.0217], score = 260.62      <et=109.21>
+SB phase 1 cand. 24 branch on var x_1_156_0_1_OspV (lhs=0.5000)  : [255634.7667, 255635.0217], score = 260.62      <et=109.24>
+SB phase 1 cand. 26 branch on var x_1_0_178_1_OspV (lhs=0.5000)  : [255634.7667, 255635.0217], score = 260.62      <et=109.26>
+SB phase 1 cand. 30 branch on var x_1_0_218_1_OspV (lhs=0.5000)  : [255633.9474, 255646.6429], score = 368.54      <et=109.31>
+SB phase 1 cand. 38 branch on var x_1_246_0_1_OspV (lhs=0.5000)  : [255633.9474, 255640.3889], score = 328.85      <et=109.39>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  7> <et=109.60> <Mt= 0.01> <Spt= 0.00> <nCl= 18> <DB=255642.6154> <Mlp=255642.6154> <PB=255644> 
+<DWph=0> <it=  4> <et=109.67> <Mt= 0.01> <Spt= 0.00> <nCl=  4> <DB=255633.9429> <Mlp=255633.9429> <PB=255644> 
+SB phase 2 cand.  1 branch on var x_1_0_218_1_OspV (lhs=0.5000): [255633.9429, 255642.6154], score = 362.58      <et=109.68>
+<DWph=0> <it=  4> <et=109.74> <Mt= 0.00> <Spt= 0.00> <nCl=  5> <DB=255640.3000> <Mlp=255640.3000> <PB=255644> 
+<DWph=0> <it=  4> <et=109.80> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <DB=255633.9429> <Mlp=255633.9429> <PB=255644> 
+SB phase 2 cand.  2 branch on var x_1_246_0_1_OspV (lhs=0.5000): [255633.9429, 255640.3000], score = 327.41      <et=109.82>
+<DWph=0> <it=  5> <et=109.88> <Mt= 0.01> <Spt= 0.00> <nCl=  5> <DB=255634.1250> <Mlp=255634.1250> <PB=255644> 
+<DWph=0> <it=  4> <et=109.95> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <DB=255634.7667> <Mlp=255634.7667> <PB=255644> 
+SB phase 2 cand.  3 branch on var x_1_0_178_1_OspV (lhs=0.5000): [255634.1250, 255634.7667], score = 246.26      <et=109.96>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_0_218_1_OspV >= 1 ), value = 255643
+<DWph=2> <it=  1> <et=109.99> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255642.6154> <Mlp=255642.6154> <PB=255644> 
+<DWph=1> <it=  2> <et=110.00> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=255642.6154> <Mlp=255642.6154> <PB=255644> 
+<DWph=0> <it=  3> <et=110.03> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255642.6154> <Mlp=255642.6154> <PB=255644> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 422 (1.01%)
+ColGenEvalAlg final dual bound: 255643 (rounded: 255643)
+----- Terminating the node by MIP -----
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_0_218_1_OspV <= 0 ), value = 255634
+<DWph=2> <it=  1> <et=110.09> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255633.9429> <Mlp=255633.9429> <PB=255644> 
+<DWph=1> <it=  2> <et=110.10> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255633.9429> <Mlp=255633.9429> <PB=255644> 
+<DWph=0> <it=  3> <et=110.12> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255633.9429> <Mlp=255633.9429> <PB=255644> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 542 (1.3%)
+ColGenEvalAlg final dual bound: 255634 (rounded: 255634)
+----- Terminating the node by MIP -----
+ SB phase 3 candidate 1 is conquered !
+************************************************************************************************
+**** BaB tree node (N° 8, parent N° 7, depth 4)
+**** Local DB = 255620, global bounds : [ 255581 , 255644 ], TIME = 0h1m50s18t = 11018
+**** 4 open nodes, 2130 columns (701 active), 13 dyn. constrs. (7 active), 815 art. vars. (809 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_34_95_1_OspV (lhs=0.5856)  : [255628.4394, 255630.8000], score = 86.02 (h)  <et=110.21>
+SB phase 1 cand.  2 branch on var x_1_139_206_1_OspV (lhs=0.4775): [255623.9000, 255640.2500], score = 72.52      <et=110.22>
+SB phase 1 cand.  3 branch on var x_1_139_187_1_OspV (lhs=0.5225): [255630.2692, 255639.7857], score = 195.13 (h)  <et=110.23>
+SB phase 1 cand.  4 branch on var x_1_158_187_1_OspV (lhs=0.4775): [255629.0333, 255639.7857], score = 171.02      <et=110.24>
+SB phase 1 cand.  6 branch on var x_1_196_230_1_OspV (lhs=0.4775): [255627.5306, 255639.7857], score = 141.69      <et=110.26>
+SB phase 1 cand.  8 branch on var x_1_196_252_1_OspV (lhs=0.5225): [255627.5306, 255639.7857], score = 141.69      <et=110.28>
+SB phase 1 cand. 17 branch on var x_1_187_230_1_OspV (lhs=0.5225): [255630.2692, 255639.7857], score = 195.13 (h)  <et=110.37>
+SB phase 1 cand. 23 branch on var x_1_241_304_1_OspV (lhs=0.6577): [255633.6786, 255640.3333], score = 269.01 (h)  <et=110.43>
+SB phase 1 cand. 41 branch on var x_1_319_335_1_OspV (lhs=0.6577): [255632.8571, 255657.9643], score = 286.10 (h)  <et=110.59>
+SB phase 1 cand. 43 branch on var x_1_288_335_1_OspV (lhs=0.3423): [255632.8571, 255657.9643], score = 286.10 (h)  <et=110.61>
+SB phase 1 cand. 45 branch on var x_1_304_378_1_OspV (lhs=0.3423): [255632.8571, 255657.2368], score = 286.10 (h)  <et=110.63>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  5> <et=110.74> <Mt= 0.01> <Spt= 0.00> <nCl= 19> <DB=255647.7000> <Mlp=255647.7000> <PB=255644> 
+<DWph=0> <it=  4> <et=110.80> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <DB=255632.8571> <Mlp=255632.8571> <PB=255644> 
+SB phase 2 cand.  1 branch on var x_1_319_335_1_OspV (lhs=0.6577): [255632.8571, 255647.7000], score = 286.10 (h)  <et=110.82>
+<DWph=0> <it=  5> <et=110.88> <Mt= 0.01> <Spt= 0.00> <nCl= 18> <DB=255647.7000> <Mlp=255647.7000> <PB=255644> 
+<DWph=0> <it=  4> <et=110.94> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <DB=255632.8571> <Mlp=255632.8571> <PB=255644> 
+SB phase 2 cand.  2 branch on var x_1_288_335_1_OspV (lhs=0.3423): [255632.8571, 255647.7000], score = 286.10 (h)  <et=110.96>
+<DWph=0> <it=  4> <et=111.01> <Mt= 0.01> <Spt= 0.00> <nCl=  8> <DB=255656.0000> <Mlp=255656.0000> <PB=255644> 
+<DWph=0> <it=  4> <et=111.07> <Mt= 0.00> <Spt= 0.00> <nCl=  9> <DB=255631.6154> <Mlp=255631.6154> <PB=255644> 
+SB phase 2 cand.  3 branch on var x_1_304_378_1_OspV (lhs=0.3423): [255631.6154, 255656.0000], score = 257.87 (h)  <et=111.08>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_319_335_1_OspV <= 0 ), value = 255648
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_319_335_1_OspV >= 1 ), value = 255633
+<DWph=2> <it=  1> <et=111.11> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255632.8571> <Mlp=255632.8571> <PB=255644> 
+<DWph=1> <it=  2> <et=111.12> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=255632.8571> <Mlp=255632.8571> <PB=255644> 
+<DWph=0> <it=  3> <et=111.14> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255632.8571> <Mlp=255632.8571> <PB=255644> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 528 (1.27%)
+ColGenEvalAlg final dual bound: 255633 (rounded: 255633)
+----- Terminating the node by MIP -----
+MIP found solution with value 255643
+ SB phase 3 candidate 1 is conquered !
+New model incumbent solution 255643, TIME = 0h1m51s19t = 11119
+************************************************************************************************
+**** BaB tree node (N° 6, parent N° 5, depth 3)
+**** Local DB = 255593, global bounds : [ 255581 , 255643 ], TIME = 0h1m51s19t = 11119
+**** 3 open nodes, 2060 columns (673 active), 10 dyn. constrs. (5 active), 812 art. vars. (807 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_34_95_1_OspV (lhs=0.1818)  : [255594.5000, 255625.1429], score = 36.11 (h)  <et=111.22>
+SB phase 1 cand.  2 branch on var x_1_239_0_1_OspV (lhs=0.5455)  : [255599.5000, 255611.0000], score = 108.22      <et=111.23>
+SB phase 1 cand.  3 branch on var x_1_189_231_1_OspV (lhs=0.9091): [255593.5385, 255666.0000], score = 8.50 (h)  <et=111.24>
+SB phase 1 cand.  4 branch on var x_1_314_0_1_OspV (lhs=0.4545)  : [255597.1429, 255614.0000], score = 77.99      <et=111.25>
+SB phase 1 cand.  6 branch on var x_1_172_239_1_OspV (lhs=0.5455): [255599.5000, 255611.0000], score = 108.22      <et=111.27>
+SB phase 1 cand.  7 branch on var x_1_319_335_1_OspV (lhs=0.6364): [255604.0000, 255615.3902], score = 234.28 (h)  <et=111.28>
+SB phase 1 cand. 13 branch on var x_1_288_335_1_OspV (lhs=0.3636): [255604.0000, 255615.3902], score = 234.28 (h)  <et=111.35>
+SB phase 1 cand. 15 branch on var x_1_304_378_1_OspV (lhs=0.3636): [255604.0000, 255611.3333], score = 191.13 (h)  <et=111.36>
+SB phase 1 cand. 18 branch on var x_1_0_254_1_OspV (lhs=0.6364)  : [255604.0000, 255615.3902], score = 234.28      <et=111.39>
+SB phase 1 cand. 20 branch on var x_1_254_0_1_OspV (lhs=0.3636)  : [255604.0000, 255615.3902], score = 234.28      <et=111.42>
+SB phase 1 cand. 43 branch on var x_1_0_288_1_OspV (lhs=0.3636)  : [255604.0000, 255615.3902], score = 234.28 (h)  <et=111.61>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  4> <et=111.72> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <DB=255612.8000> <Mlp=255612.8000> <PB=255643> 
+<DWph=0> <it=  5> <et=111.80> <Mt= 0.01> <Spt= 0.00> <nCl=  9> <DB=255603.8750> <Mlp=255603.8750> <PB=255604> 
+SB phase 2 cand.  1 branch on var x_1_288_335_1_OspV (lhs=0.3636): [255603.8750, 255612.8000], score = 204.30 (h)  <et=111.81>
+<DWph=0> <it=  4> <et=111.86> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <DB=255612.8000> <Mlp=255612.8000> <PB=255604> 
+<DWph=0> <it=  6> <et=111.95> <Mt= 0.01> <Spt= 0.00> <nCl=  9> <DB=255603.4286> <Mlp=255603.4286> <PB=255604> 
+ SB phase 2 candidate 2 is conquered !
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_0_288_1_OspV >= 1 ), value = 255613
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_0_288_1_OspV <= 0 ), value = 255603
+ SB phase 3 candidate 1 is conquered !
+New model incumbent solution 255604, TIME = 0h1m51s97t = 11197
+************************************************************************************************
+**** BaB tree node (N° 4, parent N° 3, depth 2)
+**** Local DB = 255589, global bounds : [ 255581 , 255604 ], TIME = 0h1m51s97t = 11197
+**** 2 open nodes, 1984 columns (1710 active), 12 dyn. constrs. (4 active), 814 art. vars. (806 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_0_218_1_OspV (lhs=0.5122)  : [255594.6471, 255619.3750], score = 79.54 (h)  <et=112>
+SB phase 1 cand.  2 branch on var x_1_0_43_1_OspV (lhs=0.4878)   : [255593.0408, 255602.5000], score = 54.98      <et=112.01>
+SB phase 1 cand.  3 branch on var x_1_237_0_1_OspV (lhs=0.5122)  : [255600.6154, 255631.1786], score = 163.24 (h)  <et=112.02>
+SB phase 1 cand.  4 branch on var x_1_43_0_1_OspV (lhs=0.5122)   : [255593.6563, 255601.0000], score = 56.28      <et=112.04>
+SB phase 1 cand.  5 branch on var x_1_189_231_1_OspV (lhs=0.5122): [255599.3165, 255608.2571], score = 145.02 (h)  <et=112.05>
+SB phase 1 cand.  7 branch on var x_1_34_95_1_OspV (lhs=0.3659)  : [255597.1000, 255615.2273], score = 113.94 (h)  <et=112.07>
+SB phase 1 cand.  9 branch on var x_1_139_187_1_OspV (lhs=0.6585): [255598.6667, 255639.9196], score = 135.91 (h)  <et=112.1>
+SB phase 1 cand. 17 branch on var x_1_304_378_1_OspV (lhs=0.5366): [255599.6790, 255602.7368], score = 147.29 (h)  <et=112.18>
+SB phase 1 cand. 37 branch on var x_1_0_330_1_OspV (lhs=0.4634)  : [255602.6364, 255602.7294], score = 187.89 (h)  <et=112.38>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  4> <et=112.56> <Mt= 0.00> <Spt= 0.00> <nCl=  5> <DB=255600.5000> <Mlp=255600.5000> <PB=255604> 
+<DWph=0> <it=  5> <et=112.65> <Mt= 0.01> <Spt= 0.00> <nCl=  8> <DB=255601.2000> <Mlp=255601.2000> <PB=255604> 
+SB phase 2 cand.  1 branch on var x_1_0_330_1_OspV (lhs=0.4634)  : [255600.5000, 255601.2000], score = 140.88 (h)  <et=112.66>
+<DWph=0> <it=  5> <et=112.72> <Mt= 0.01> <Spt= 0.00> <nCl=  5> <DB=255620.8082> <Mlp=255620.8082> <PB=255604> 
+<DWph=0> <it=  4> <et=112.79> <Mt= 0.00> <Spt= 0.00> <nCl=  2> <DB=255598.1765> <Mlp=255598.1765> <PB=255604> 
+SB phase 2 cand.  2 branch on var x_1_237_0_1_OspV (lhs=0.5122)  : [255598.1765, 255620.8082], score = 129.04 (h)  <et=112.81>
+<DWph=0> <it=  4> <et=112.86> <Mt= 0.01> <Spt= 0.00> <nCl=  7> <DB=255597.2658> <Mlp=255597.2658> <PB=255604> 
+<DWph=0> <it=  3> <et=112.92> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=255599.6790> <Mlp=255599.6790> <PB=255604> 
+SB phase 2 cand.  3 branch on var x_1_304_378_1_OspV (lhs=0.5366): [255597.2658, 255599.6790], score = 88.73 (h)  <et=112.93>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_0_330_1_OspV <= 0 ), value = 255601
+<DWph=2> <it=  1> <et=112.96> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255601.2000> <Mlp=255601.2000> <PB=255604> 
+<DWph=1> <it=  2> <et=112.97> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255601.2000> <Mlp=255601.2000> <PB=255604> 
+<DWph=0> <it=  3> <et=112.99> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255601.2000> <Mlp=255601.2000> <PB=255604> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 441 (1.06%)
+ColGenEvalAlg final dual bound: 255601 (rounded: 255602)
+----- Terminating the node by MIP -----
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_0_330_1_OspV >= 1 ), value = 255600
+<DWph=2> <it=  1> <et=113.06> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255600.5000> <Mlp=255600.5000> <PB=255604> 
+<DWph=1> <it=  2> <et=113.07> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255600.5000> <Mlp=255600.5000> <PB=255604> 
+<DWph=0> <it=  3> <et=113.09> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255600.5000> <Mlp=255600.5000> <PB=255604> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 451 (1.08%)
+ColGenEvalAlg final dual bound: 255600 (rounded: 255601)
+----- Terminating the node by MIP -----
+ SB phase 3 candidate 1 is conquered !
+************************************************************************************************
+**** BaB tree node (N° 2, parent N° 1, depth 1)
+**** Local DB = 255580, global bounds : [ 255581 , 255604 ], TIME = 0h1m53s13t = 11313
+**** 1 open nodes, 1939 columns (563 active), 6 dyn. constrs. (3 active), 808 art. vars. (805 active)
+************************************************************************************************
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_0_218_1_OspV (lhs=0.4167)  : [255583.8333, 255621.0000], score = 81.52 (h)  <et=113.16>
+SB phase 1 cand.  2 branch on var x_1_248_0_1_OspV (lhs=0.5000)  : [255582.7778, 255583.0000], score = 6.95      <et=113.17>
+SB phase 1 cand.  3 branch on var x_1_189_231_1_OspV (lhs=0.5833): [255583.0000, 255596.2941], score = 44.12 (h)  <et=113.18>
+SB phase 1 cand.  4 branch on var x_1_0_302_1_OspV (lhs=0.5000)  : [255588.0256, 255599.2500], score = 147.74      <et=113.19>
+SB phase 1 cand.  5 branch on var x_1_237_0_1_OspV (lhs=0.6667)  : [255583.0000, 255619.5000], score = 62.56 (h)  <et=113.2>
+SB phase 1 cand.  6 branch on var x_1_0_305_1_OspV (lhs=0.5000)  : [255586.7778, 255603.0000], score = 148.51      <et=113.21>
+SB phase 1 cand.  8 branch on var x_1_0_320_1_OspV (lhs=0.5000)  : [255588.0256, 255621.1786], score = 176.90      <et=113.23>
+SB phase 1 cand. 10 branch on var x_1_267_320_1_OspV (lhs=0.5000): [255588.0256, 255624.2000], score = 176.90      <et=113.25>
+SB phase 1 cand. 20 branch on var x_1_320_379_1_OspV (lhs=0.5000): [255588.0256, 255624.2000], score = 176.90      <et=113.33>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  4> <et=113.61> <Mt= 0.00> <Spt= 0.00> <nCl=  5> <DB=255620.5000> <Mlp=255620.5000> <PB=255604> 
+<DWph=0> <it=  4> <et=113.68> <Mt= 0.01> <Spt= 0.00> <nCl=  3> <DB=255587.8889> <Mlp=255587.8889> <PB=255604> 
+SB phase 2 cand.  1 branch on var x_1_0_320_1_OspV (lhs=0.5000)  : [255587.8889, 255620.5000], score = 173.78      <et=113.7>
+<DWph=0> <it=  6> <et=113.77> <Mt= 0.01> <Spt= 0.00> <nCl= 10> <DB=255622.6667> <Mlp=255622.6667> <PB=255604> 
+<DWph=0> <it=  4> <et=113.83> <Mt= 0.00> <Spt= 0.00> <nCl=  3> <DB=255587.8889> <Mlp=255587.8889> <PB=255604> 
+SB phase 2 cand.  2 branch on var x_1_267_320_1_OspV (lhs=0.5000): [255587.8889, 255622.6667], score = 173.78      <et=113.84>
+<DWph=0> <it=  6> <et=113.91> <Mt= 0.01> <Spt= 0.00> <nCl=  9> <DB=255622.6667> <Mlp=255622.6667> <PB=255604> 
+<DWph=0> <it=  4> <et=113.97> <Mt= 0.00> <Spt= 0.00> <nCl=  3> <DB=255587.8889> <Mlp=255587.8889> <PB=255604> 
+SB phase 2 cand.  3 branch on var x_1_320_379_1_OspV (lhs=0.5000): [255587.8889, 255622.6667], score = 173.78      <et=113.99>
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_0_320_1_OspV <= 0 ), value = 255620
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_0_320_1_OspV >= 1 ), value = 255588
+<DWph=2> <it=  1> <et=114.02> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255587.8889> <Mlp=255587.8889> <PB=255604> 
+<DWph=1> <it=  2> <et=114.03> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255587.8889> <Mlp=255587.8889> <PB=255604> 
+<DWph=0> <it=  3> <et=114.04> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=255587.8889> <Mlp=255587.8889> <PB=255604> 
+Reduced cost fixing for graph G_1...  took 0 sec., done by inspection with 41717 solutions, remains 619 (1.48%)
+ColGenEvalAlg final dual bound: 255588 (rounded: 255588)
+----- Terminating the node by MIP -----
+ SB phase 3 candidate 1 is conquered !
+************************************************************************************************
+Search is finished, global bounds : [ 255604 , 255604 ], TIME = 0h1m54s13t = 11413
+************************************************************************************************
+[32mBaPCod : solution defined.[00m
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: csp400_Solomon & 1 & 1.0e7 & 255555.00 & 8.42 & 31 & 255604.00 & 255604 & 114.13 \\
+########################################################
+Route #1: 1 
+Route #2: 2 28 87 
+Route #3: 3 47 
+Route #4: 4 57 92 
+Route #5: 5 82 
+Route #6: 6 
+Route #7: 7 69 94 
+Route #8: 8 35 
+Route #9: 9 54 
+Route #10: 10 84 
+Route #11: 11 
+Route #12: 12 43 
+Route #13: 13 65 
+Route #14: 14 80 
+Route #15: 15 40 97 
+Route #16: 16 67 89 
+Route #17: 17 30 85 
+Route #18: 18 79 
+Route #19: 19 66 83 
+Route #20: 20 88 99 
+Route #21: 21 51 
+Route #22: 22 63 117 
+Route #23: 23 52 
+Route #24: 24 81 
+Route #25: 25 60 90 
+Route #26: 26 
+Route #27: 27 53 98 
+Route #28: 29 59 
+Route #29: 31 62 111 
+Route #30: 32 
+Route #31: 33 75 86 
+Route #32: 34 91 105 
+Route #33: 36 73 95 102 116 
+Route #34: 37 104 
+Route #35: 38 56 78 
+Route #36: 39 50 93 152 
+Route #37: 41 68 96 136 
+Route #38: 42 49 106 125 142 
+Route #39: 44 127 
+Route #40: 45 61 109 121 
+Route #41: 46 101 
+Route #42: 48 71 108 144 
+Route #43: 55 115 
+Route #44: 58 113 154 
+Route #45: 64 107 
+Route #46: 70 114 137 
+Route #47: 72 100 145 
+Route #48: 74 110 141 167 
+Route #49: 76 103 131 183 
+Route #50: 77 112 140 
+Route #51: 118 201 
+Route #52: 119 193 
+Route #53: 120 173 224 
+Route #54: 122 207 
+Route #55: 123 204 
+Route #56: 124 175 
+Route #57: 126 191 209 
+Route #58: 128 146 212 
+Route #59: 129 163 194 221 
+Route #60: 130 148 181 215 
+Route #61: 132 176 226 
+Route #62: 133 206 
+Route #63: 134 213 
+Route #64: 135 179 228 
+Route #65: 138 155 184 238 
+Route #66: 139 187 230 
+Route #67: 143 190 
+Route #68: 147 199 217 237 
+Route #69: 149 164 205 246 
+Route #70: 150 182 255 
+Route #71: 151 192 210 229 
+Route #72: 153 172 233 
+Route #73: 156 178 218 249 273 
+Route #74: 157 220 
+Route #75: 158 188 261 
+Route #76: 159 227 
+Route #77: 160 244 
+Route #78: 161 251 
+Route #79: 162 216 
+Route #80: 165 232 
+Route #81: 166 185 253 
+Route #82: 168 223 235 
+Route #83: 169 211 242 276 
+Route #84: 170 243 
+Route #85: 171 222 266 
+Route #86: 174 214 313 
+Route #87: 177 247 299 
+Route #88: 180 264 
+Route #89: 186 219 236 257 
+Route #90: 189 231 262 
+Route #91: 195 250 296 
+Route #92: 196 245 323 
+Route #93: 197 234 293 
+Route #94: 198 248 288 
+Route #95: 200 240 287 
+Route #96: 202 239 295 
+Route #97: 203 258 309 
+Route #98: 208 225 294 
+Route #99: 241 304 
+Route #100: 252 285 343 
+Route #101: 254 329 
+Route #102: 256 283 319 335 357 378 
+Route #103: 259 278 314 360 
+Route #104: 260 286 369 
+Route #105: 263 340 
+Route #106: 265 354 
+Route #107: 267 318 345 373 
+Route #108: 268 350 
+Route #109: 269 302 331 375 
+Route #110: 270 321 352 
+Route #111: 271 338 356 
+Route #112: 272 332 348 391 
+Route #113: 274 326 371 
+Route #114: 275 349 
+Route #115: 277 358 
+Route #116: 279 359 
+Route #117: 280 310 337 389 
+Route #118: 281 303 363 
+Route #119: 282 346 396 
+Route #120: 284 322 400 
+Route #121: 289 361 
+Route #122: 290 353 
+Route #123: 291 377 
+Route #124: 292 367 385 
+Route #125: 297 370 
+Route #126: 298 336 393 
+Route #127: 300 347 395 
+Route #128: 301 351 
+Route #129: 305 379 
+Route #130: 306 365 
+Route #131: 307 344 392 
+Route #132: 308 374 
+Route #133: 311 341 398 
+Route #134: 312 327 364 383 394 
+Route #135: 315 382 
+Route #136: 316 342 368 390 
+Route #137: 317 362 
+Route #138: 320 387 
+Route #139: 324 366 
+Route #140: 325 376 
+Route #141: 328 372 
+Route #142: 330 380 
+Route #143: 333 355 
+Route #144: 334 388 
+Route #145: 339 397 
+Route #146: 381 
+Route #147: 384 
+Route #148: 386 
+Route #149: 399 
+Cost 255604.0
+########################################################

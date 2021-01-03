@@ -1,0 +1,239 @@
+Application parameters:
+  batch  =>  nothing
+  tikz  =>  nothing
+  instance  =>  "/IN/csp350_Solomon.txt"
+  out  =>  "/OUT/csp350_Solomon.sol"
+  nosolve  =>  false
+  ub  =>  1.0e7
+  sol  =>  nothing
+  cfg  =>  "/VRPTW/src/../config/VRPTW_set_1.cfg"
+  enable_cap_res  =>  false
+[41m solve [00m
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver beta v0.3, 17/11/2019. Web: vrpsolver.math.u-bordeaux.fr
+Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2019)
+Paper: dx.doi.org/10.1007/978-3-030-17953-3_27
+USE THIS CODE ONLY FOR ACADEMIC PURPOSES AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BaPCod v045b, 17/11/2019, © Inria Bordeaux, France (license expires 1/12/2021)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver parameters:
+GlobalTimeLimit = 21474836
+MaxNbOfBBtreeNodeTreated = 100000
+treeSearchStrategy = 1
+RCSPstopCutGenTimeThresholdInPricing = 5
+RCSPhardTimeThresholdInPricing = 10
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 1
+RCSPapplyReducedCostFixing = 1
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+RCSPheurLabelingStrategy = 0
+StabilizationMinPhaseOfStage = 0
+RCSPmaxNumOfLabelsInEnumeration = 1000000
+RCSPmaxNumOfEnumeratedSolutions = 10000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 16
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMaxNumRows = 7
+RCSPrankOneCutsMemoryType = 1
+CutTailingOffThreshold = 0.015
+CutTailingOffCounterThreshold = 3
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOneCandidatesNumber = 50
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.1
+StrongBranchingPhaseTwoCandidatesNumber = 3
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.1
+MaxTimeForRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+New model incumbent solution 1e+07, TIME = 0h0m0s3t = 3
+Model is built TIME = 0h0m1s4t = 104
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m1s4t = 104
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 702 art. vars. (702 active)
+************************************************************************************************
+<DWph=2> <it= 10> <et=1.15> <Mt= 0.00> <Spt= 0.00> <nCl=300> <DB=-29383708827.9428> <Mlp=1884104098.0000> <PB=10000000> 
+<DWph=2> <it= 20> <et=1.27> <Mt= 0.04> <Spt= 0.00> <nCl=300> <DB=-20833229381.8099> <Mlp=292168548.4159> <PB=10000000> 
+<DWph=2> <it= 30> <et=1.47> <Mt= 0.08> <Spt= 0.00> <nCl=234> <DB=-179163.3170> <Mlp=234174.5572> <PB=10000000> 
+<DWph=2> <it= 40> <et=1.63> <Mt= 0.07> <Spt= 0.00> <nCl=184> <DB=191326.9176> <Mlp=230953.2500> <PB=10000000> 
+<DWph=2> <it= 50> <et=1.75> <Mt= 0.02> <Spt= 0.00> <nCl= 74> <DB=229476.6132> <Mlp=230729.2500> <PB=10000000> 
+<DWph=2> <it= 51> <et=1.77> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+<DWph=1> <it= 53> <et=1.80> <Mt= 0.01> <Spt= 0.00> <nCl=  1> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+<DWph=0> <it= 54> <et=1.83> <Mt= 0.00> <Spt= 0.02> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+Reduced cost fixing for graph G_1... took 0.04 sec., 26606 buck. arcs remain (55.8% from prev., 10.8% from max.)
+Run enumeration... took 0.11 sec. and succeeded! Pricing will be done by inspection.
+<DWph=2> <it= 55> <et=2.08> <Mt= 0.05> <Spt= 0.00> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+<DWph=1> <it= 56> <et=2.08> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+<DWph=0> <it= 57> <et=2.09> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+ColGenEvalAlg final dual bound: 230729 (rounded: 230730)
+----- Add fac. cuts : sep. took 5.4 sec.----- no cuts found  -----
+**** Strong branching phase 1 is started *****
+SB phase 1 cand.  1 branch on var x_1_0_98_1_OspV (lhs=0.5000)   : [230735.2500, 230737.0000], score = 46.50      <et=7.51>
+SB phase 1 cand.  2 branch on var x_1_0_106_1_OspV (lhs=0.5000)  : [230735.0000, 230749.8333], score = 118.35      <et=7.51>
+SB phase 1 cand.  3 branch on var x_1_106_0_1_OspV (lhs=0.5000)  : [230735.8000, 230747.5833], score = 120.08      <et=7.52>
+SB phase 1 cand.  4 branch on var x_1_0_140_1_OspV (lhs=0.5000)  : [230737.0000, 230750.8000], score = 167.01      <et=7.53>
+SB phase 1 cand.  5 branch on var x_1_140_0_1_OspV (lhs=0.5000)  : [230737.0000, 230750.8000], score = 167.01      <et=7.53>
+SB phase 1 cand. 11 branch on var x_1_199_0_1_OspV (lhs=0.5000)  : [230737.0000, 230750.8000], score = 167.01      <et=7.56>
+SB phase 1 cand. 17 branch on var x_1_252_0_1_OspV (lhs=0.5000)  : [230737.0000, 230753.2857], score = 186.28      <et=7.59>
+SB phase 1 cand. 37 branch on var x_1_179_199_1_OspV (lhs=0.5000): [230737.0000, 230753.2857], score = 186.28      <et=7.69>
+SB phase 1 cand. 39 branch on var x_1_199_252_1_OspV (lhs=0.5000): [230737.0000, 230753.2857], score = 186.28      <et=7.7>
+**** Strong branching phase 2 is started *****
+<DWph=0> <it=  8> <et=7.82> <Mt= 0.01> <Spt= 0.00> <nCl=217> <DB=230742.6667> <Mlp=230742.6667> <PB=10000000> 
+<DWph=0> <it=  8> <et=7.91> <Mt= 0.02> <Spt= 0.00> <nCl=211> <DB=230737.0000> <Mlp=230737.0000> <PB=230737> 
+SB phase 2 cand.  1 branch on var x_1_252_0_1_OspV (lhs=0.5000)  : [230737.0000, 230742.6667], score = 103.98      <et=7.92>
+<DWph=0> <it=  9> <et=8.00> <Mt= 0.02> <Spt= 0.00> <nCl=220> <DB=230742.6667> <Mlp=230742.6667> <PB=230737> 
+<DWph=0> <it=  7> <et=8.12> <Mt= 0.06> <Spt= 0.00> <nCl=223> <DB=230737.0000> <Mlp=230737.0000> <PB=230737> 
+ SB phase 2 candidate 2 is conquered !
+**** Strong branching phase 3 is started *****
+**** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_179_199_1_OspV >= 1 ), value = 230743
+**** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_179_199_1_OspV <= 0 ), value = 230737
+ SB phase 3 candidate 1 is conquered !
+New model incumbent solution 230737, TIME = 0h0m8s15t = 815
+************************************************************************************************
+Search is finished, global bounds : [ 230737 , 230737 ], TIME = 0h0m8s15t = 815
+************************************************************************************************
+[32mBaPCod : solution defined.[00m
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: csp350_Solomon & 1 & 1.0e7 & 230730.00 & 7.50 & 3 & 230737.00 & 230737 & 8.15 \\
+########################################################
+Route #1: 1 63 
+Route #2: 2 70 
+Route #3: 3 31 46 
+Route #4: 4 41 83 
+Route #5: 5 28 
+Route #6: 6 18 54 
+Route #7: 7 58 88 
+Route #8: 8 
+Route #9: 9 32 
+Route #10: 10 33 81 
+Route #11: 11 72 76 127 
+Route #12: 12 45 65 122 
+Route #13: 13 68 
+Route #14: 14 
+Route #15: 15 49 
+Route #16: 16 61 96 
+Route #17: 17 75 
+Route #18: 19 59 
+Route #19: 20 
+Route #20: 21 60 
+Route #21: 22 55 100 
+Route #22: 23 52 86 
+Route #23: 24 51 67 
+Route #24: 25 50 84 
+Route #25: 26 74 114 
+Route #26: 27 62 89 108 
+Route #27: 29 71 126 
+Route #28: 30 78 142 
+Route #29: 34 97 
+Route #30: 35 109 
+Route #31: 36 106 
+Route #32: 37 64 136 
+Route #33: 38 79 162 
+Route #34: 39 110 
+Route #35: 40 69 119 
+Route #36: 42 53 91 139 
+Route #37: 43 95 
+Route #38: 44 113 154 
+Route #39: 47 73 115 
+Route #40: 48 107 124 169 
+Route #41: 56 82 130 
+Route #42: 57 85 146 
+Route #43: 66 87 111 163 
+Route #44: 77 102 116 149 
+Route #45: 80 103 143 
+Route #46: 90 134 182 
+Route #47: 92 178 
+Route #48: 93 125 173 185 
+Route #49: 94 158 176 
+Route #50: 98 181 
+Route #51: 99 152 200 
+Route #52: 101 123 196 
+Route #53: 104 131 167 
+Route #54: 105 128 183 
+Route #55: 112 168 225 
+Route #56: 117 132 177 
+Route #57: 118 151 184 194 
+Route #58: 120 171 
+Route #59: 121 165 193 206 
+Route #60: 129 187 
+Route #61: 133 195 244 
+Route #62: 135 156 
+Route #63: 137 210 222 
+Route #64: 138 205 
+Route #65: 140 199 
+Route #66: 141 186 
+Route #67: 144 202 226 
+Route #68: 145 172 217 
+Route #69: 147 204 239 
+Route #70: 148 212 
+Route #71: 150 214 
+Route #72: 153 207 
+Route #73: 155 175 228 
+Route #74: 157 218 
+Route #75: 159 180 227 
+Route #76: 160 197 231 246 
+Route #77: 161 203 
+Route #78: 164 224 
+Route #79: 166 191 240 
+Route #80: 170 209 216 
+Route #81: 174 229 
+Route #82: 179 201 221 241 254 
+Route #83: 188 251 
+Route #84: 189 234 266 
+Route #85: 190 230 285 
+Route #86: 192 219 273 
+Route #87: 198 261 
+Route #88: 208 238 296 
+Route #89: 211 257 
+Route #90: 213 242 294 
+Route #91: 215 262 
+Route #92: 220 250 276 308 
+Route #93: 223 300 
+Route #94: 232 301 
+Route #95: 233 281 310 
+Route #96: 235 256 302 
+Route #97: 236 297 
+Route #98: 237 270 311 
+Route #99: 243 299 343 
+Route #100: 245 286 330 
+Route #101: 247 306 
+Route #102: 248 271 305 
+Route #103: 249 284 304 
+Route #104: 252 279 
+Route #105: 253 291 345 
+Route #106: 255 312 334 
+Route #107: 258 320 
+Route #108: 259 321 
+Route #109: 260 322 
+Route #110: 263 333 
+Route #111: 264 329 350 
+Route #112: 265 315 
+Route #113: 267 323 
+Route #114: 268 341 
+Route #115: 269 336 
+Route #116: 272 324 
+Route #117: 274 318 331 
+Route #118: 275 340 
+Route #119: 277 316 
+Route #120: 278 338 
+Route #121: 280 325 
+Route #122: 282 342 
+Route #123: 283 326 
+Route #124: 287 313 349 
+Route #125: 288 309 
+Route #126: 289 327 
+Route #127: 290 339 
+Route #128: 292 346 
+Route #129: 293 332 347 
+Route #130: 295 344 
+Route #131: 298 319 348 
+Route #132: 303 337 
+Route #133: 307 314 328 
+Route #134: 317 335 
+Cost 230737.0
+########################################################

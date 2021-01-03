@@ -1,0 +1,116 @@
+Application parameters:
+  batch  =>  nothing
+  tikz  =>  nothing
+  instance  =>  "/IN/csp100_Solomon.txt"
+  out  =>  "/OUT/csp100_Solomon.sol"
+  nosolve  =>  false
+  ub  =>  1.0e7
+  sol  =>  nothing
+  cfg  =>  "/VRPTW/src/../config/VRPTW_set_1.cfg"
+  enable_cap_res  =>  false
+[41m solve [00m
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver beta v0.3, 17/11/2019. Web: vrpsolver.math.u-bordeaux.fr
+Corresponds to the solver by Pessoa, Sadykov, Uchoa and Vanderbeck (2019)
+Paper: dx.doi.org/10.1007/978-3-030-17953-3_27
+USE THIS CODE ONLY FOR ACADEMIC PURPOSES AT YOUR OWN RISK
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+BaPCod v045b, 17/11/2019, © Inria Bordeaux, France (license expires 1/12/2021)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VRPSolver parameters:
+GlobalTimeLimit = 21474836
+MaxNbOfBBtreeNodeTreated = 100000
+treeSearchStrategy = 1
+RCSPstopCutGenTimeThresholdInPricing = 5
+RCSPhardTimeThresholdInPricing = 10
+RCSPnumberOfBucketsPerVertex = 25
+RCSPdynamicBucketSteps = 1
+RCSPuseBidirectionalSearch = 1
+RCSPapplyReducedCostFixing = 1
+RCSPmaxNumOfColsPerIteration = 30
+RCSPmaxNumOfColsPerExactIteration = 150
+RCSPheurLabelingStrategy = 0
+StabilizationMinPhaseOfStage = 0
+RCSPmaxNumOfLabelsInEnumeration = 1000000
+RCSPmaxNumOfEnumeratedSolutions = 10000000
+RCSPmaxNumOfEnumSolutionsForMIP = 10000
+RCSPinitNGneighbourhoodSize = 8
+RCSPmaxNGneighbourhoodSize = 16
+RCSPrankOneCutsMaxNumPerRound = 100
+RCSPrankOneCutsMaxNumRows = 7
+RCSPrankOneCutsMemoryType = 1
+CutTailingOffThreshold = 0.015
+CutTailingOffCounterThreshold = 3
+SafeDualBoundScaleFactor = -1
+StrongBranchingPhaseOneCandidatesNumber = 50
+StrongBranchingPhaseOneTreeSizeEstimRatio = 0.1
+StrongBranchingPhaseTwoCandidatesNumber = 3
+StrongBranchingPhaseTwoTreeSizeEstimRatio = 0.1
+MaxTimeForRestrictedMasterIpHeur = -1
+DivingHeurUseDepthLimit = -1
+MaxLDSbreadth = 0
+MaxLDSdepth = 0
+New model incumbent solution 1e+07, TIME = 0h0m0s3t = 3
+Model is built TIME = 0h0m0s87t = 87
+************************************************************************************************
+**** BaB tree root node
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m0s87t = 87
+**** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 202 art. vars. (202 active)
+************************************************************************************************
+<DWph=2> <it= 10> <et=0.89> <Mt= 0.00> <Spt= 0.00> <nCl=295> <DB=-1156702.0000> <Mlp=67298.0000> <PB=67298> 
+<DWph=2> <it= 16> <et=0.90> <Mt= 0.00> <Spt= 0.00> <nCl= 27> <DB=67030.0000> <Mlp=67030.0000> <PB=67030> 
+<DWph=1> <it= 17> <et=0.90> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=67030.0000> <Mlp=67030.0000> <PB=67030> 
+<DWph=0> <it= 18> <et=0.91> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=67030.0000> <Mlp=67030.0000> <PB=67030> 
+ColGenEvalAlg final dual bound: 67030 (rounded: 67030)
+New model incumbent solution 67030, TIME = 0h0m0s91t = 91
+************************************************************************************************
+Search is finished, global bounds : [ 67030 , 67030 ], TIME = 0h0m0s91t = 91
+************************************************************************************************
+[32mBaPCod : solution defined.[00m
+statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
+statistics: csp100_Solomon & 1 & 1.0e7 & 67030.00 & 0.91 & 1 & 67030.00 & 67030 & 0.91 \\
+########################################################
+Route #1: 1 12 28 
+Route #2: 2 14 
+Route #3: 3 22 
+Route #4: 4 18 27 
+Route #5: 5 13 
+Route #6: 6 15 
+Route #7: 7 21 
+Route #8: 8 20 25 
+Route #9: 9 23 
+Route #10: 10 17 
+Route #11: 11 33 
+Route #12: 16 31 37 
+Route #13: 19 32 36 43 
+Route #14: 24 30 38 
+Route #15: 26 34 
+Route #16: 29 35 58 
+Route #17: 39 50 62 
+Route #18: 40 68 
+Route #19: 41 57 70 
+Route #20: 42 54 81 
+Route #21: 44 64 
+Route #22: 45 51 65 
+Route #23: 46 55 
+Route #24: 47 69 
+Route #25: 48 56 
+Route #26: 49 61 78 
+Route #27: 52 66 84 
+Route #28: 53 67 75 
+Route #29: 59 72 85 
+Route #30: 60 
+Route #31: 63 83 88 
+Route #32: 71 80 90 
+Route #33: 73 87 
+Route #34: 74 89 94 
+Route #35: 76 92 100 
+Route #36: 77 96 
+Route #37: 79 91 
+Route #38: 82 93 
+Route #39: 86 95 
+Route #40: 97 
+Route #41: 98 
+Route #42: 99 
+Cost 67030.0
+########################################################
