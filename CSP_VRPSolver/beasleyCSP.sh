@@ -1,4 +1,5 @@
 ./VRPSolver data/beasleySolomonFormat/nodes/csp50_Solomon.txt -o sol/csp50_Solomon.sol > out/csp50_Solomon.out
+#./VRPSolver data/beasleySolomonFormat/nodes/csp50_Solomon.txt -o sol/csp50_Solomon.sol -t sol/csp50_Solomon.tex > out/csp50_Solomon.out
 ./VRPSolver data/beasleySolomonFormat/nodes/csp100_Solomon.txt -o sol/csp100_Solomon.sol > out/csp100_Solomon.out
 ./VRPSolver data/beasleySolomonFormat/nodes/csp150_Solomon.txt -o sol/csp150_Solomon.sol > out/csp150_Solomon.out
 ./VRPSolver data/beasleySolomonFormat/nodes/csp200_Solomon.txt -o sol/csp200_Solomon.sol > out/csp200_Solomon.out
