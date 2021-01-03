@@ -1,6 +1,6 @@
 Application parameters:
   batch  =>  nothing
-  tikz  =>  nothing
+  tikz  =>  "/TIKZ/csp350_Solomon.dot"
   instance  =>  "/IN/csp350_Solomon.txt"
   out  =>  "/OUT/csp350_Solomon.sol"
   nosolve  =>  false
@@ -50,56 +50,56 @@ MaxTimeForRestrictedMasterIpHeur = -1
 DivingHeurUseDepthLimit = -1
 MaxLDSbreadth = 0
 MaxLDSdepth = 0
-New model incumbent solution 1e+07, TIME = 0h0m0s3t = 3
-Model is built TIME = 0h0m1s4t = 104
+New model incumbent solution 1e+07, TIME = 0h0m0s2t = 2
+Model is built TIME = 0h0m1s6t = 106
 ************************************************************************************************
 **** BaB tree root node
-**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m1s4t = 104
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m1s6t = 106
 **** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 702 art. vars. (702 active)
 ************************************************************************************************
-<DWph=2> <it= 10> <et=1.15> <Mt= 0.00> <Spt= 0.00> <nCl=300> <DB=-29383708827.9428> <Mlp=1884104098.0000> <PB=10000000> 
-<DWph=2> <it= 20> <et=1.27> <Mt= 0.04> <Spt= 0.00> <nCl=300> <DB=-20833229381.8099> <Mlp=292168548.4159> <PB=10000000> 
-<DWph=2> <it= 30> <et=1.47> <Mt= 0.08> <Spt= 0.00> <nCl=234> <DB=-179163.3170> <Mlp=234174.5572> <PB=10000000> 
-<DWph=2> <it= 40> <et=1.63> <Mt= 0.07> <Spt= 0.00> <nCl=184> <DB=191326.9176> <Mlp=230953.2500> <PB=10000000> 
-<DWph=2> <it= 50> <et=1.75> <Mt= 0.02> <Spt= 0.00> <nCl= 74> <DB=229476.6132> <Mlp=230729.2500> <PB=10000000> 
-<DWph=2> <it= 51> <et=1.77> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
-<DWph=1> <it= 53> <et=1.80> <Mt= 0.01> <Spt= 0.00> <nCl=  1> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
-<DWph=0> <it= 54> <et=1.83> <Mt= 0.00> <Spt= 0.02> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+<DWph=2> <it= 10> <et=1.17> <Mt= 0.00> <Spt= 0.00> <nCl=300> <DB=-29383708827.9428> <Mlp=1884104098.0000> <PB=10000000> 
+<DWph=2> <it= 20> <et=1.30> <Mt= 0.04> <Spt= 0.01> <nCl=300> <DB=-20833229381.8099> <Mlp=292168548.4159> <PB=10000000> 
+<DWph=2> <it= 30> <et=1.51> <Mt= 0.08> <Spt= 0.01> <nCl=234> <DB=-179163.3170> <Mlp=234174.5572> <PB=10000000> 
+<DWph=2> <it= 40> <et=1.68> <Mt= 0.07> <Spt= 0.02> <nCl=184> <DB=191326.9176> <Mlp=230953.2500> <PB=10000000> 
+<DWph=2> <it= 50> <et=1.82> <Mt= 0.02> <Spt= 0.01> <nCl= 74> <DB=229476.6132> <Mlp=230729.2500> <PB=10000000> 
+<DWph=2> <it= 51> <et=1.84> <Mt= 0.01> <Spt= 0.01> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+<DWph=1> <it= 53> <et=1.87> <Mt= 0.00> <Spt= 0.02> <nCl=  1> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+<DWph=0> <it= 54> <et=1.90> <Mt= 0.00> <Spt= 0.02> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
 Reduced cost fixing for graph G_1... took 0.04 sec., 26606 buck. arcs remain (55.8% from prev., 10.8% from max.)
 Run enumeration... took 0.11 sec. and succeeded! Pricing will be done by inspection.
-<DWph=2> <it= 55> <et=2.08> <Mt= 0.05> <Spt= 0.00> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
-<DWph=1> <it= 56> <et=2.08> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
-<DWph=0> <it= 57> <et=2.09> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+<DWph=2> <it= 55> <et=2.15> <Mt= 0.05> <Spt= 0.00> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+<DWph=1> <it= 56> <et=2.16> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
+<DWph=0> <it= 57> <et=2.16> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=230729.2500> <Mlp=230729.2500> <PB=10000000> 
 ColGenEvalAlg final dual bound: 230729 (rounded: 230730)
------ Add fac. cuts : sep. took 5.4 sec.----- no cuts found  -----
+----- Add fac. cuts : sep. took 5.34 sec.----- no cuts found  -----
 **** Strong branching phase 1 is started *****
-SB phase 1 cand.  1 branch on var x_1_0_98_1_OspV (lhs=0.5000)   : [230735.2500, 230737.0000], score = 46.50      <et=7.51>
-SB phase 1 cand.  2 branch on var x_1_0_106_1_OspV (lhs=0.5000)  : [230735.0000, 230749.8333], score = 118.35      <et=7.51>
-SB phase 1 cand.  3 branch on var x_1_106_0_1_OspV (lhs=0.5000)  : [230735.8000, 230747.5833], score = 120.08      <et=7.52>
-SB phase 1 cand.  4 branch on var x_1_0_140_1_OspV (lhs=0.5000)  : [230737.0000, 230750.8000], score = 167.01      <et=7.53>
-SB phase 1 cand.  5 branch on var x_1_140_0_1_OspV (lhs=0.5000)  : [230737.0000, 230750.8000], score = 167.01      <et=7.53>
-SB phase 1 cand. 11 branch on var x_1_199_0_1_OspV (lhs=0.5000)  : [230737.0000, 230750.8000], score = 167.01      <et=7.56>
-SB phase 1 cand. 17 branch on var x_1_252_0_1_OspV (lhs=0.5000)  : [230737.0000, 230753.2857], score = 186.28      <et=7.59>
-SB phase 1 cand. 37 branch on var x_1_179_199_1_OspV (lhs=0.5000): [230737.0000, 230753.2857], score = 186.28      <et=7.69>
-SB phase 1 cand. 39 branch on var x_1_199_252_1_OspV (lhs=0.5000): [230737.0000, 230753.2857], score = 186.28      <et=7.7>
+SB phase 1 cand.  1 branch on var x_1_0_98_1_OspV (lhs=0.5000)   : [230735.2500, 230737.0000], score = 46.50      <et=7.52>
+SB phase 1 cand.  2 branch on var x_1_0_106_1_OspV (lhs=0.5000)  : [230735.0000, 230749.8333], score = 118.35      <et=7.53>
+SB phase 1 cand.  3 branch on var x_1_106_0_1_OspV (lhs=0.5000)  : [230735.8000, 230747.5833], score = 120.08      <et=7.53>
+SB phase 1 cand.  4 branch on var x_1_0_140_1_OspV (lhs=0.5000)  : [230737.0000, 230750.8000], score = 167.01      <et=7.54>
+SB phase 1 cand.  5 branch on var x_1_140_0_1_OspV (lhs=0.5000)  : [230737.0000, 230750.8000], score = 167.01      <et=7.55>
+SB phase 1 cand. 11 branch on var x_1_199_0_1_OspV (lhs=0.5000)  : [230737.0000, 230750.8000], score = 167.01      <et=7.58>
+SB phase 1 cand. 17 branch on var x_1_252_0_1_OspV (lhs=0.5000)  : [230737.0000, 230753.2857], score = 186.28      <et=7.61>
+SB phase 1 cand. 37 branch on var x_1_179_199_1_OspV (lhs=0.5000): [230737.0000, 230753.2857], score = 186.28      <et=7.7>
+SB phase 1 cand. 39 branch on var x_1_199_252_1_OspV (lhs=0.5000): [230737.0000, 230753.2857], score = 186.28      <et=7.71>
 **** Strong branching phase 2 is started *****
-<DWph=0> <it=  8> <et=7.82> <Mt= 0.01> <Spt= 0.00> <nCl=217> <DB=230742.6667> <Mlp=230742.6667> <PB=10000000> 
-<DWph=0> <it=  8> <et=7.91> <Mt= 0.02> <Spt= 0.00> <nCl=211> <DB=230737.0000> <Mlp=230737.0000> <PB=230737> 
-SB phase 2 cand.  1 branch on var x_1_252_0_1_OspV (lhs=0.5000)  : [230737.0000, 230742.6667], score = 103.98      <et=7.92>
-<DWph=0> <it=  9> <et=8.00> <Mt= 0.02> <Spt= 0.00> <nCl=220> <DB=230742.6667> <Mlp=230742.6667> <PB=230737> 
-<DWph=0> <it=  7> <et=8.12> <Mt= 0.06> <Spt= 0.00> <nCl=223> <DB=230737.0000> <Mlp=230737.0000> <PB=230737> 
+<DWph=0> <it=  8> <et=7.83> <Mt= 0.02> <Spt= 0.00> <nCl=217> <DB=230742.6667> <Mlp=230742.6667> <PB=10000000> 
+<DWph=0> <it=  8> <et=7.92> <Mt= 0.01> <Spt= 0.00> <nCl=211> <DB=230737.0000> <Mlp=230737.0000> <PB=230737> 
+SB phase 2 cand.  1 branch on var x_1_252_0_1_OspV (lhs=0.5000)  : [230737.0000, 230742.6667], score = 103.98      <et=7.94>
+<DWph=0> <it=  9> <et=8.02> <Mt= 0.02> <Spt= 0.00> <nCl=220> <DB=230742.6667> <Mlp=230742.6667> <PB=230737> 
+<DWph=0> <it=  7> <et=8.14> <Mt= 0.06> <Spt= 0.00> <nCl=223> <DB=230737.0000> <Mlp=230737.0000> <PB=230737> 
  SB phase 2 candidate 2 is conquered !
 **** Strong branching phase 3 is started *****
 **** SB phase 3 evaluation of candidate 1, branch 1 ( x_1_179_199_1_OspV >= 1 ), value = 230743
 **** SB phase 3 evaluation of candidate 1, branch 2 ( x_1_179_199_1_OspV <= 0 ), value = 230737
  SB phase 3 candidate 1 is conquered !
-New model incumbent solution 230737, TIME = 0h0m8s15t = 815
+New model incumbent solution 230737, TIME = 0h0m8s17t = 817
 ************************************************************************************************
-Search is finished, global bounds : [ 230737 , 230737 ], TIME = 0h0m8s15t = 815
+Search is finished, global bounds : [ 230737 , 230737 ], TIME = 0h0m8s18t = 818
 ************************************************************************************************
 [32mBaPCod : solution defined.[00m
 statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
-statistics: csp350_Solomon & 1 & 1.0e7 & 230730.00 & 7.50 & 3 & 230737.00 & 230737 & 8.15 \\
+statistics: csp350_Solomon & 1 & 1.0e7 & 230730.00 & 7.51 & 3 & 230737.00 & 230737 & 8.18 \\
 ########################################################
 Route #1: 1 63 
 Route #2: 2 70 

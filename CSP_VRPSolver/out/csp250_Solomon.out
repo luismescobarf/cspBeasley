@@ -1,6 +1,6 @@
 Application parameters:
   batch  =>  nothing
-  tikz  =>  nothing
+  tikz  =>  "/TIKZ/csp250_Solomon.dot"
   instance  =>  "/IN/csp250_Solomon.txt"
   out  =>  "/OUT/csp250_Solomon.sol"
   nosolve  =>  false
@@ -50,32 +50,32 @@ MaxTimeForRestrictedMasterIpHeur = -1
 DivingHeurUseDepthLimit = -1
 MaxLDSbreadth = 0
 MaxLDSdepth = 0
-New model incumbent solution 1e+07, TIME = 0h0m0s3t = 3
-Model is built TIME = 0h0m0s95t = 95
+New model incumbent solution 1e+07, TIME = 0h0m0s2t = 2
+Model is built TIME = 0h0m1s2t = 102
 ************************************************************************************************
 **** BaB tree root node
-**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m0s95t = 95
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m1s2t = 102
 **** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 502 art. vars. (502 active)
 ************************************************************************************************
-<DWph=2> <it= 10> <et=1.02> <Mt= 0.00> <Spt= 0.00> <nCl=298> <DB=-23217855658.1495> <Mlp=765116973.5000> <PB=10000000> 
-<DWph=2> <it= 20> <et=1.10> <Mt= 0.03> <Spt= 0.00> <nCl=267> <DB=-11647916679.9779> <Mlp=161462368.9000> <PB=10000000> 
-<DWph=2> <it= 30> <et=1.21> <Mt= 0.02> <Spt= 0.00> <nCl=167> <DB=69206.1813> <Mlp=177378.0000> <PB=177378> 
-<DWph=2> <it= 40> <et=1.28> <Mt= 0.01> <Spt= 0.00> <nCl=102> <DB=170785.5096> <Mlp=176752.5000> <PB=176774> 
-<DWph=2> <it= 43> <et=1.31> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <DB=176748.0000> <Mlp=176748.0000> <PB=176774> 
-<DWph=1> <it= 44> <et=1.32> <Mt= 0.01> <Spt= 0.00> <nCl=  0> <DB=176748.0000> <Mlp=176748.0000> <PB=176774> 
-<DWph=0> <it= 45> <et=1.34> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=176748.0000> <Mlp=176748.0000> <PB=176774> 
+<DWph=2> <it= 10> <et=1.09> <Mt= 0.00> <Spt= 0.00> <nCl=298> <DB=-23217855658.1495> <Mlp=765116973.5000> <PB=10000000> 
+<DWph=2> <it= 20> <et=1.18> <Mt= 0.03> <Spt= 0.00> <nCl=267> <DB=-11647916679.9779> <Mlp=161462368.9000> <PB=10000000> 
+<DWph=2> <it= 30> <et=1.28> <Mt= 0.02> <Spt= 0.00> <nCl=167> <DB=69206.1813> <Mlp=177378.0000> <PB=177378> 
+<DWph=2> <it= 40> <et=1.36> <Mt= 0.02> <Spt= 0.00> <nCl=102> <DB=170785.5096> <Mlp=176752.5000> <PB=176774> 
+<DWph=2> <it= 43> <et=1.38> <Mt= 0.00> <Spt= 0.00> <nCl=  4> <DB=176748.0000> <Mlp=176748.0000> <PB=176774> 
+<DWph=1> <it= 44> <et=1.39> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=176748.0000> <Mlp=176748.0000> <PB=176774> 
+<DWph=0> <it= 45> <et=1.41> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=176748.0000> <Mlp=176748.0000> <PB=176774> 
 Reduced cost fixing for graph G_1... took 0.01 sec., 3707 buck. arcs remain (15.4% from prev., 2.95% from max.)
 Run enumeration... took 0.05 sec. and succeeded! Pricing will be done by inspection.
 ColGenEvalAlg final dual bound: 176748 (rounded: 176748)
 ----- Terminating the node by MIP -----
 MIP found solution with value 176753
-New model incumbent solution 176753, TIME = 0h0m1s44t = 144
+New model incumbent solution 176753, TIME = 0h0m1s51t = 151
 ************************************************************************************************
-Search is finished, global bounds : [ 176753 , 176753 ], TIME = 0h0m1s44t = 144
+Search is finished, global bounds : [ 176753 , 176753 ], TIME = 0h0m1s51t = 151
 ************************************************************************************************
 [32mBaPCod : solution defined.[00m
 statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
-statistics: csp250_Solomon & 1 & 1.0e7 & 176753.00 & 1.44 & 1 & 176753.00 & 176753 & 1.44 \\
+statistics: csp250_Solomon & 1 & 1.0e7 & 176753.00 & 1.51 & 1 & 176753.00 & 176753 & 1.51 \\
 ########################################################
 Route #1: 1 10 35 
 Route #2: 2 37 

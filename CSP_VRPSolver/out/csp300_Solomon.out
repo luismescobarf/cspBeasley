@@ -1,6 +1,6 @@
 Application parameters:
   batch  =>  nothing
-  tikz  =>  nothing
+  tikz  =>  "/TIKZ/csp300_Solomon.dot"
   instance  =>  "/IN/csp300_Solomon.txt"
   out  =>  "/OUT/csp300_Solomon.sol"
   nosolve  =>  false
@@ -51,28 +51,28 @@ DivingHeurUseDepthLimit = -1
 MaxLDSbreadth = 0
 MaxLDSdepth = 0
 New model incumbent solution 1e+07, TIME = 0h0m0s3t = 3
-Model is built TIME = 0h0m0s99t = 99
+Model is built TIME = 0h0m1s3t = 103
 ************************************************************************************************
 **** BaB tree root node
-**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m0s99t = 99
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m1s3t = 103
 **** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 602 art. vars. (602 active)
 ************************************************************************************************
-<DWph=2> <it= 10> <et=1.08> <Mt= 0.00> <Spt= 0.00> <nCl=300> <DB=-29550214902.0541> <Mlp=1491097755.7500> <PB=10000000> 
-<DWph=2> <it= 20> <et=1.18> <Mt= 0.03> <Spt= 0.00> <nCl=286> <DB=-15253149304.3149> <Mlp=444169793.5000> <PB=10000000> 
-<DWph=2> <it= 30> <et=1.31> <Mt= 0.04> <Spt= 0.00> <nCl=243> <DB=-1488551.9444> <Mlp=225225.8333> <PB=10000000> 
-<DWph=2> <it= 40> <et=1.42> <Mt= 0.03> <Spt= 0.00> <nCl=219> <DB=126414.7761> <Mlp=221390.0000> <PB=221390> 
-<DWph=2> <it= 50> <et=1.53> <Mt= 0.02> <Spt= 0.00> <nCl=102> <DB=217365.6237> <Mlp=220702.0000> <PB=220702> 
-<DWph=2> <it= 52> <et=1.56> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=220700.0000> <Mlp=220700.0000> <PB=220700> 
-<DWph=1> <it= 53> <et=1.58> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=220700.0000> <Mlp=220700.0000> <PB=220700> 
-<DWph=0> <it= 54> <et=1.60> <Mt= 0.00> <Spt= 0.02> <nCl=  0> <DB=220700.0000> <Mlp=220700.0000> <PB=220700> 
+<DWph=2> <it= 10> <et=1.12> <Mt= 0.00> <Spt= 0.00> <nCl=300> <DB=-29550214902.0541> <Mlp=1491097755.7500> <PB=10000000> 
+<DWph=2> <it= 20> <et=1.22> <Mt= 0.03> <Spt= 0.01> <nCl=286> <DB=-15253149304.3149> <Mlp=444169793.5000> <PB=10000000> 
+<DWph=2> <it= 30> <et=1.34> <Mt= 0.04> <Spt= 0.00> <nCl=243> <DB=-1488551.9444> <Mlp=225225.8333> <PB=10000000> 
+<DWph=2> <it= 40> <et=1.45> <Mt= 0.03> <Spt= 0.00> <nCl=219> <DB=126414.7761> <Mlp=221390.0000> <PB=221390> 
+<DWph=2> <it= 50> <et=1.54> <Mt= 0.02> <Spt= 0.00> <nCl=102> <DB=217365.6237> <Mlp=220702.0000> <PB=220702> 
+<DWph=2> <it= 52> <et=1.57> <Mt= 0.00> <Spt= 0.00> <nCl=  1> <DB=220700.0000> <Mlp=220700.0000> <PB=220700> 
+<DWph=1> <it= 53> <et=1.59> <Mt= 0.00> <Spt= 0.00> <nCl=  0> <DB=220700.0000> <Mlp=220700.0000> <PB=220700> 
+<DWph=0> <it= 54> <et=1.61> <Mt= 0.00> <Spt= 0.01> <nCl=  0> <DB=220700.0000> <Mlp=220700.0000> <PB=220700> 
 ColGenEvalAlg final dual bound: 220700 (rounded: 220700)
-New model incumbent solution 220700, TIME = 0h0m1s61t = 161
+New model incumbent solution 220700, TIME = 0h0m1s62t = 162
 ************************************************************************************************
-Search is finished, global bounds : [ 220700 , 220700 ], TIME = 0h0m1s61t = 161
+Search is finished, global bounds : [ 220700 , 220700 ], TIME = 0h0m1s62t = 162
 ************************************************************************************************
 [32mBaPCod : solution defined.[00m
 statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
-statistics: csp300_Solomon & 1 & 1.0e7 & 220700.00 & 1.61 & 1 & 220700.00 & 220700 & 1.61 \\
+statistics: csp300_Solomon & 1 & 1.0e7 & 220700.00 & 1.62 & 1 & 220700.00 & 220700 & 1.62 \\
 ########################################################
 Route #1: 1 38 97 110 
 Route #2: 2 56 70 

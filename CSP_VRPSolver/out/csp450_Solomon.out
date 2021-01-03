@@ -1,6 +1,6 @@
 Application parameters:
   batch  =>  nothing
-  tikz  =>  nothing
+  tikz  =>  "/TIKZ/csp450_Solomon.dot"
   instance  =>  "/IN/csp450_Solomon.txt"
   out  =>  "/OUT/csp450_Solomon.sol"
   nosolve  =>  false
@@ -50,32 +50,32 @@ MaxTimeForRestrictedMasterIpHeur = -1
 DivingHeurUseDepthLimit = -1
 MaxLDSbreadth = 0
 MaxLDSdepth = 0
-New model incumbent solution 1e+07, TIME = 0h0m0s3t = 3
-Model is built TIME = 0h0m1s23t = 123
+New model incumbent solution 1e+07, TIME = 0h0m0s2t = 2
+Model is built TIME = 0h0m1s19t = 119
 ************************************************************************************************
 **** BaB tree root node
-**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m1s23t = 123
+**** Local DB = -1e+12, global bounds : [ -1e+12 , 1e+07 ], TIME = 0h0m1s20t = 120
 **** 1 open nodes, 0 columns (0 active), 0 dyn. constrs. (0 active), 902 art. vars. (902 active)
 ************************************************************************************************
-<DWph=2> <it= 10> <et=1.40> <Mt= 0.01> <Spt= 0.10> <nCl=300> <DB=-32420028504.2370> <Mlp=2472126382.0000> <PB=10000000> 
-<DWph=2> <it= 20> <et=1.58> <Mt= 0.03> <Spt= 0.10> <nCl=271> <DB=-20795232846.5413> <Mlp=811955480.3867> <PB=10000000> 
-<DWph=2> <it= 30> <et=1.81> <Mt= 0.09> <Spt= 0.10> <nCl=250> <DB=-12845799506.9952> <Mlp=321295135.5274> <PB=10000000> 
-<DWph=2> <it= 40> <et=2.10> <Mt= 0.11> <Spt= 0.13> <nCl=185> <DB=-662538.4885> <Mlp=316850.6313> <PB=10000000> 
-<DWph=2> <it= 50> <et=2.34> <Mt= 0.11> <Spt= 0.10> <nCl=263> <DB=254270.4500> <Mlp=312820.1710> <PB=10000000> 
-<DWph=2> <it= 60> <et=2.54> <Mt= 0.04> <Spt= 0.10> <nCl=170> <DB=286813.3267> <Mlp=311613.4000> <PB=10000000> 
-<DWph=2> <it= 70> <et=2.71> <Mt= 0.02> <Spt= 0.10> <nCl= 78> <DB=302288.0918> <Mlp=311505.1667> <PB=311529> 
-<DWph=2> <it= 79> <et=2.86> <Mt= 0.02> <Spt= 0.10> <nCl= 22> <DB=311498.0000> <Mlp=311498.0000> <PB=311498> 
-<DWph=1> <it= 80> <et=2.88> <Mt= 0.00> <Spt= 0.01> <nCl=  3> <DB=178498.0000> <Mlp=311498.0000> <PB=311498> 
-<DWph=1> <it= 82> <et=2.93> <Mt= 0.00> <Spt= 0.03> <nCl=  4> <DB=311431.0000> <Mlp=311431.0000> <PB=311431> 
-<DWph=0> <it= 83> <et=2.97> <Mt= 0.01> <Spt= 0.03> <nCl=  0> <DB=311431.0000> <Mlp=311431.0000> <PB=311431> 
+<DWph=2> <it= 10> <et=1.36> <Mt= 0.01> <Spt= 0.10> <nCl=300> <DB=-32420028504.2370> <Mlp=2472126382.0000> <PB=10000000> 
+<DWph=2> <it= 20> <et=1.54> <Mt= 0.03> <Spt= 0.10> <nCl=271> <DB=-20795232846.5413> <Mlp=811955480.3867> <PB=10000000> 
+<DWph=2> <it= 30> <et=1.77> <Mt= 0.09> <Spt= 0.10> <nCl=250> <DB=-12845799506.9952> <Mlp=321295135.5274> <PB=10000000> 
+<DWph=2> <it= 40> <et=2.05> <Mt= 0.11> <Spt= 0.13> <nCl=185> <DB=-662538.4885> <Mlp=316850.6313> <PB=10000000> 
+<DWph=2> <it= 50> <et=2.30> <Mt= 0.10> <Spt= 0.10> <nCl=263> <DB=254270.4500> <Mlp=312820.1710> <PB=10000000> 
+<DWph=2> <it= 60> <et=2.49> <Mt= 0.05> <Spt= 0.10> <nCl=170> <DB=286813.3267> <Mlp=311613.4000> <PB=10000000> 
+<DWph=2> <it= 70> <et=2.66> <Mt= 0.02> <Spt= 0.10> <nCl= 78> <DB=302288.0918> <Mlp=311505.1667> <PB=311529> 
+<DWph=2> <it= 79> <et=2.82> <Mt= 0.02> <Spt= 0.10> <nCl= 22> <DB=311498.0000> <Mlp=311498.0000> <PB=311498> 
+<DWph=1> <it= 80> <et=2.83> <Mt= 0.00> <Spt= 0.01> <nCl=  3> <DB=178498.0000> <Mlp=311498.0000> <PB=311498> 
+<DWph=1> <it= 82> <et=2.88> <Mt= 0.00> <Spt= 0.03> <nCl=  4> <DB=311431.0000> <Mlp=311431.0000> <PB=311431> 
+<DWph=0> <it= 83> <et=2.92> <Mt= 0.00> <Spt= 0.03> <nCl=  0> <DB=311431.0000> <Mlp=311431.0000> <PB=311431> 
 ColGenEvalAlg final dual bound: 311431 (rounded: 311431)
-New model incumbent solution 311431, TIME = 0h0m2s98t = 298
+New model incumbent solution 311431, TIME = 0h0m2s93t = 293
 ************************************************************************************************
-Search is finished, global bounds : [ 311431 , 311431 ], TIME = 0h0m2s98t = 298
+Search is finished, global bounds : [ 311431 , 311431 ], TIME = 0h0m2s93t = 293
 ************************************************************************************************
 [32mBaPCod : solution defined.[00m
 statistics_cols: instance & :Optimal & cutoff & :bcRecRootDb & :bcTimeRootEval & :bcCountNodeProc & :bcRecBestDb & :bcRecBestInc & :bcTimeMain \\
-statistics: csp450_Solomon & 1 & 1.0e7 & 311431.00 & 2.98 & 1 & 311431.00 & 311431 & 2.98 \\
+statistics: csp450_Solomon & 1 & 1.0e7 & 311431.00 & 2.93 & 1 & 311431.00 & 311431 & 2.94 \\
 ########################################################
 Route #1: 1 76 
 Route #2: 2 72 94 
