@@ -84,9 +84,11 @@ for archivoBeasley in listadoInstancias:
                 
                 #Coordenada en x
                 lineaNodo += seisEspacios + str(coordenadaVirtualBloque_XY) 
+                #lineaNodo += seisEspacios + str( instancia['bloques'][i-1]['t0'] )  
                 
                 #Coordenada en y
                 lineaNodo += nueveEspacios + str(coordenadaVirtualBloque_XY) 
+                #lineaNodo += nueveEspacios + str( instancia['bloques'][i-1]['tf'] )  
                 
                 #Demanda (valor unitario, virtual)
                 lineaNodo += nueveEspacios + str(1) 
