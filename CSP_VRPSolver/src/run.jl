@@ -72,7 +72,8 @@ function run_vrptw(app::Dict{String,Any})
          writesolution(app["out"], sol)
       end
       if app["tikz"] != nothing
-         drawsolution(app["tikz"], data, sol) # write tikz figure
+         #drawsolution(app["tikz"], data, sol) # write tikz figure
+         drawsolutionDOT(app["tikz"], data, sol) # write graphviz figure
       end
    elseif !app["nosolve"]
       if status == :Optimal
