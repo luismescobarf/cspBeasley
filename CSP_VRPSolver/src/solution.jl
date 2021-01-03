@@ -145,3 +145,96 @@ function drawsolution(tikzpath, data, solution)
 end
 
 
+# write solution as graphviz (.dot) 
+function drawsolutionDOT(dotpath, data, solution)
+
+   #Preparar información de los arcos
+   #A, dim = arcs(data), n(data)+1
+   A = arcs(data)  
+   #@objective(vrptw.formulation, Min, sum(c(data,a) * x[a] for a in A))
+
+   #Crear/abrir el archivo para descargar la solución obtenida
+   open(dotpath, "w") do f
+
+      #Generar cabecera del archivo
+      write(f,"digraph D {\n")
+		write(f,"rankdir=LR\n")
+		write(f,"size=\"4,3\"\n")
+		write(f,"ratio=\"fill\"\n")		
+		write(f,"node[color=\"black\",shape=\"square\",fillcolor=\"darkseagreen3\",style=\"filled\"]")
+		write(f,"\n 0")
+		write(f,"\n N1")
+      write(f,"\n node[color=\"black\",shape=\"circle\",style=\"\"]")
+      
+      #Líneas de separación en el archivo del grafo para inspección visual
+      write(f,"\n \n");      
+
+      ##Dibujar los arcos generados por la solución
+      write(f,"edge[style=\"solid\"]\n")#Estilo de los arcos solución
+
+      #Por cada uno de los itinerarios de la solución
+      for (idr,r) in enumerate(solution.routes) 
+
+         prev = 0 #Bloque de trabajo previo en el itinerario
+
+         for i in r #Por cada uno de los bloques de trabajo del itinerario
+            
+            #Restaurar estilo para cada arco antes de diferenciar si es inicial o intermedio
+            write(f,"edge[style=\"solid\"]\n")
+                        
+            #Construir la tupla que contiene el arco que se va a dibujar
+            a = (prev,i)
+
+            #Obtener información de la etiqueta de la arista
+            costoTransicion = c(data,a)
+            tiempoTransicion = t(data,a)
+
+            #Definir estilo del arco (salida o regreso)
+            if (prev == 0 || i == 0) #Arco de inicio o finalización de itinerario
+
+               #Arista que llega al depósito               
+               if i == 0 #if(j==num+1){                  
+                  write(f,"$(a[1])->N1")#dot_file<<i<<"->N1";
+               else
+                  #Arista que sale del depósito
+                  write(f,"0->$(a[2])")#dot_file<<i<<"->"<<j;                  
+               end
+
+               #Adicionar etiqueta de la arista               
+               write(f,"[label=\"c=$costoTransicion,t=$tiempoTransicion\",") #dot_file<<"[label=\"c="<<costoTransicion<<",t="<<tiempoTransicion<<"\",";
+     
+               #Alternativas de color
+               write(f,"color=\"darkseagreen3\"] \n")#dot_file<<"color=\"darkseagreen3\"]"<<endl;//Salidas del depósito
+               #write(f,"color=\"darkorange2\"] \n")#dot_file<<"color=\"darkorange2\"]"<<endl;//Salidas del depósito
+                                                            
+            else #Arco intermedio (conexión entre bloques de trabajo)                             
+
+               #Encabezado de las cadenas              
+               write(f,"$(a[1])->$(a[2])")#dot_file<<i<<"->"<<j
+
+               #Etiqueta
+               write(f,"[label=\"c=$costoTransicion,t=$tiempoTransicion\",")#dot_file<<"[label=\"c="<<costoTransicion<<",t="<<tiempoTransicion<<"\",";                              
+               
+               #Establecer color si es factible o no       
+               if (costoTransicion != 100000000)
+                  write(f,"color=\"dodgerblue2\"] \n") #dot_file<<"color=\"dodgerblue2\"]"<<endl;//Transiciones de cadena o turno				
+               else
+                  write(f,"color=\"red\",style=\"dotted\"] \n") #dot_file<<"color=\"red\",style=\"dotted\"]"<<endl;//Transiciones ilegales
+               end
+               
+
+            end           
+            
+            #Actualizar el nodo previo para el siguiente arco
+            prev = i
+
+         end
+         
+      end      
+
+		#Cierre del archivo graphviz (.dot)		
+      write(f,"}")
+
+   end#Cierre del archivo graphviz (.dot)
+
+end#Cierre de la función
