@@ -5,11 +5,31 @@ function build_model(data::DataVRPTW, app)
    Q = veh_capacity(data)
    T = max_duration(data)
 
+   #K mínimo para cada instancia de Beasley
+   K_Beasley = Dict{String,Int64}()
+   K_Beasley["csp50"] = 27
+   K_Beasley["csp100"] = 44
+   K_Beasley["csp150"] = 69
+   K_Beasley["csp200"] = 93
+   K_Beasley["csp250"] = 108
+   K_Beasley["csp300"] = 130
+   K_Beasley["csp350"] = 144
+   K_Beasley["csp400"] = 159
+   K_Beasley["csp450"] = 182
+   K_Beasley["csp500"] = 204
+
+   #Obtener el K mínimo de Beasley para el caso que se está solucionando
+   nombreInstancia = split(last( split(app["instance"],"/")  ),"_")[1]
+
    # Formulation
    vrptw = VrpModel()
-   @variable(vrptw.formulation, x[a in A], Int)
-   @objective(vrptw.formulation, Min, sum(c(data,a) * x[a] for a in A))
+   @variable(vrptw.formulation, x[a in A], Int)   
+   @objective(vrptw.formulation, Min, sum(x[a] for a in A if a[1] == 0))#FO Minimizando únicamente número de empleados
+   #@objective(vrptw.formulation, Min, sum(c(data,a) * x[a] for a in A))#FO Minimizando costos y número de empleados   
    @constraint(vrptw.formulation, indeg[i in V], sum(x[a] for a in A if a[2] == i) == 1.0)
+
+   #Restricción para fijar el modelo al valor de K mínimo presentado en (Beasley,96)
+   #@constraint(vrptw.formulation, sum(x[a] for a in A if a[1] == 0) == K_Beasley[nombreInstancia])
    
    #Restricción para forzar un arco del óptimo
    #@constraint(vrptw.formulation, x[(9,16)] == 1.0)
@@ -97,7 +117,7 @@ function build_model(data::DataVRPTW, app)
    """   
 
    #Salida de diagnóstico del modelo
-   #println(vrptw.formulation)
+   println(vrptw.formulation)
 
    # Build the model directed graph G=(V1,A1)
    function buildgraph()
