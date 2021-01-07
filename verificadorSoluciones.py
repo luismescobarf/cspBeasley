@@ -13,8 +13,11 @@ from cargadorInstancias import *
 #Entrada por lotes (pendiente)
 
 #Entradas para una sola instancia
-instancia = beasley('./instances/csp500.txt')	
-solucion = solucionVRP_Solver('./solutions/vrpSolver_csp500.txt')#Solución sospecha infactible, 24 itinerarios
+caso = 'csp500'
+instancia = beasley('./instances/'+caso+'.txt')
+solucion = solucionVRP_Solver('./CSP_VRPSolver/solK_Min/'+caso+'_Solomon.sol')#Solución minimizando únicamente K
+#solucion = solucionVRP_Solver('./CSP_VRPSolver/solK_Beasley/'+caso+'_Solomon.sol')#Solución K fijo en mínimo de Beasley
+#solucion = solucionVRP_Solver('./CSP_VRPSolver/sol/'+caso+'_Solomon.sol')#Solución K libre
 #solucion = solucionVRP_Solver('./solutions/vrpSolver_csp50.txt')#Solución sospecha infactible, 24 itinerarios
 #solucion = solucionVRP_Solver('./solutions/sol_csp50.txt')#Solución sospecha infactible, 24 itinerarios
 #solucion = solucionVRP_Solver('./solutions/sol_csp50_b.txt')#Solución VRPSolver tiempos de servicio corregidos, 27 itinerarios
@@ -108,7 +111,8 @@ for itinerario in solucion['itinerarios']:
     reporte['costoCompleto'] += costoItinerario
     
     #Diagnóstico costo de cada itinerario    
-    print(indiceItinerario,' - ',itinerario, ': ', costoItinerario)    
+    #print(indiceItinerario,' - ',itinerario, ': ', costoItinerario)    
+    print(indiceItinerario,' - ',itinerario, ': ', duracionItinerario)    
     
     #Incrementar el índice de itinerarios para el reporte de errores
     indiceItinerario += 1
