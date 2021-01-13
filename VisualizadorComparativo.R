@@ -1,11 +1,14 @@
 #Carga de paquetes
-library("readxl", "tibble", "tidyverse","shiny")
+library("readxl") 
+library("tibble") 
+library("tidyverse")
+library("shiny")
 #Lector de información
 Comparaciones <- read_excel("/Users/kennycardenas/Desktop/Integra/Tesis RIB/ComparativoResultados_Integra_Beasley_VRPSolver.xlsx", sheet = "Comparativo")
 n <- dim(Comparaciones)
 n[1] -> nfilas
 n[2] -> ncolumnas
-Comparaciones <- Comparaciones[1:(nfilas-1),]
+Comparaciones <- Comparaciones[1:(nfilas-9),]
 #Nombre de la instancia
 Comparaciones$Instancias <- c(apply(Comparaciones[,1:2] , 1 , paste , collapse = "-"))
 #Borrar las columnas que tienen estas indicaciones
@@ -39,3 +42,8 @@ Bolanos20M <- Bolanos20M[3:nrow(Bolanos20M),]
 Bolanos20CortesK <- cbind(Comparaciones[,26:29],Comparaciones$Instancias)
 names(Bolanos20CortesK) <- c(Bolanos20CortesK[2,1:4], "Instancias")
 Bolanos20CortesK <- Bolanos20CortesK[3:nrow(Bolanos20CortesK),] 
+
+#Primer comparación Beasly 96 con VRPSolver 19 resolviendo Beasly 96
+TiemposPC <- as.data.frame(cbind(Beasly96$`Tiempo Cómputo Total (segundos)`, VRPSolver19KB96$`Tiempo Cómputo Total (segundos)`, VRPSolver19$Instancias))
+FuncionOPC <- as.data.frame(cbind(Beasly96$`Función Objetivo`, VRPSolver19KB96$`Función Objetivo`, VRPSolver19$Instancias))
+ggplot(TiemposPC, aes(x=))
