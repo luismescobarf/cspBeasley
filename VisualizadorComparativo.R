@@ -51,7 +51,9 @@ names(Bolanos20CortesK) <- c(Bolanos20CortesK[2,1:4])
 Bolanos20CortesK <- Bolanos20CortesK[3:nrow(Bolanos20CortesK),] 
 Bolanos20CortesK[,1:4]<- apply(Bolanos20CortesK[,1:4],2,as.numeric)
 #Primer comparación Beasly 96 con VRPSolver 19 resolviendo Beasly 96
-TiemposPC <- data.frame(c(Beasly96$`Tiempo Cómputo Total (segundos)`, VRPSolver19KB96$`Tiempo Cómputo Total (segundos)`), as.factor(c(rep("Beasly96",10),rep("VRPSolver19KB96",10))), rep(c('50-173','100-715','150-1355','200-2543','250-4152','300-6108','350-7882','400-10760','450-13510','500-16695'),2))
+TiemposPC <- data.frame(c(Beasly96$`Tiempo Cómputo Total (segundos)`, VRPSolver19KB96$`Tiempo Cómputo Total (segundos)`), (c(rep("Beasly96",10),rep("VRPSolver19KB96",10))))
+TiemposPC$Instancia <- c(50,100,150,200,250,300,350,400,450,500)
 names(TiemposPC)<- c("CPUTime", "Metodologia", "Instancia")
-ggplot(TiemposPC, labels= Metodologia)+scale_y_log10()+geom_point(aes(Instancia, CPUTime)) + 
-  xlab('Instancias') + ylab("Tiempo Cómputo Total (segundos)")+ scale_x_discrete(limits=c(as.character(row.names(TiemposPC))))
+ggplot(TiemposPC, aes(Instancia, CPUTime, color = factor(Instancia), shape = Metodologia),labels= Metodologia, colors = Metodologia)+scale_y_log10()+geom_point(size = 4, alpha = 0.8)  + 
+   xlab('Instancias (turnos)') + ylab("Tiempo Cómputo Total (segundos)")
+  
