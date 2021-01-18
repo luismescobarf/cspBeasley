@@ -6,12 +6,13 @@ library("shiny")
 library("ggplot2")
 ####Lector de información###
 Comparaciones <- read_excel("/Users/kennycardenas/Desktop/Integra/Tesis RIB/ComparativoResultados_Integra_Beasley_VRPSolver.xlsx", sheet = "Comparativo")
+Comparaciones2 <- read_excel("/Users/kennycardenas/Desktop/Integra/Tesis RIB/ComparativoResultados_Integra_Beasley_VRPSolver.xlsx", sheet = "Comparar")
 n <- dim(Comparaciones)
 n[1] -> nfilas
 n[2] -> ncolumnas
-Comparaciones <- Comparaciones[1:(nfilas-9),]
-#Nombre de la instancia
-Comparaciones$Instancias <- c(apply(Comparaciones[,1:2] , 1 , paste , collapse = "-"))
+Comparaciones <- Comparaciones[1:(nfilas-1),]
+#Nombre de las Instancias
+Instancias <- Comparaciones[3:(nfilas-1), 1]
 #Borrar las columnas que tienen estas indicaciones
 Comparaciones <- Comparaciones[,3:ncol(Comparaciones)]
 #Separar tablas de diferentes casos
@@ -51,9 +52,8 @@ names(Bolanos20CortesK) <- c(Bolanos20CortesK[2,1:4])
 Bolanos20CortesK <- Bolanos20CortesK[3:nrow(Bolanos20CortesK),] 
 Bolanos20CortesK[,1:4]<- apply(Bolanos20CortesK[,1:4],2,as.numeric)
 #Primer comparación Beasly 96 con VRPSolver 19 resolviendo Beasly 96
-TiemposPC <- data.frame(c(Beasly96$`Tiempo Cómputo Total (segundos)`, VRPSolver19KB96$`Tiempo Cómputo Total (segundos)`), (c(rep("Beasly96",10),rep("VRPSolver19KB96",10))))
-TiemposPC$Instancia <- c(50,100,150,200,250,300,350,400,450,500)
+TiemposPC <- data.frame(c(Beasly96$`Tiempo Cómputo Total (segundos)`, VRPSolver19KB96$`Tiempo Cómputo Total (segundos)`,apply(Comparaciones2[3:12,7],2,as.numeric),apply(Comparaciones2[3:12,11],2,as.numeric)), (c(rep("Beasly (96)",10),rep("K fijo VRP Solver (2020) ",10),rep("APRI (Derigs & Schaffer 14)",10),rep("Branch & Price (Derigs & Schaffer 14)",10))))
+TiemposPC$Instancia <- c(apply(Instancias,2,as.numeric))
 names(TiemposPC)<- c("CPUTime", "Metodologia", "Instancia")
-ggplot(TiemposPC, aes(Instancia, CPUTime, color = factor(Instancia), shape = Metodologia),labels= Metodologia, colors = Metodologia)+scale_y_log10()+geom_point(size = 4, alpha = 0.8)  + 
+ggplot(TiemposPC, aes(Instancia, CPUTime, color = factor(Instancia), shape = Metodologia),labels= Metodologia, colors = Metodologia)+scale_y_log10()+geom_point(size = 2.5, alpha = 0.8)  + 
    xlab('Instancias (turnos)') + ylab("Tiempo Cómputo Total (segundos)")
-  
